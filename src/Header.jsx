@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from './assets/logo.png';
+import food1 from './assets/food1.jpg';
+import food2 from './assets/food2.jpg';
+import food3 from './assets/food3.jpg';
 import './Header.css';
 
 function Header() {
@@ -34,6 +37,50 @@ function Header() {
             <div className="C_TitleName">
                 <h1>A</h1>
                 <h2>BOUT</h2>
+            </div>
+            <div className="line"></div>
+            <div className="C_TitleContent">
+                <p>Penang, is famed for its cultural diversity, heritage sites, and vibrant street food in George Town.</p>
+            </div> 
+            <div className="container">
+                    <input type="radio" name="slider" id="item-1" defaultChecked></input>
+                    <input type="radio" name="slider" id="item-2"></input>
+                    <input type="radio" name="slider" id="item-3"></input>
+                <div className="cards">
+                    <label className="card" htmlFor="item-1" id="image-1">
+                        <img src={food1} alt="Penang" />
+                    </label>
+                    <label className="card" htmlFor="item-2" id="image-2">
+                        <img src={food2} alt="Penang" />
+                    </label>
+                    <label className="card" htmlFor="item-3" id="image-3">
+                        <img src={food3} alt="Penang" />
+                    </label>
+                </div>
+                <div className="player">
+                    <div className="upper-part">
+                        <div className="play-icon">
+                            <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" strokeLinejoin="round" strokeWidth="2" className="feather feather-play" viewBox="0 0 24 24">
+                                <defs/>
+                                <path d="M5 3l14 9-14 9V3z"/>
+                            </svg>
+                        </div>
+                        <div className="info-area" id="test">
+                            <label className="image-info" id="image-info-1">
+                                <div className="title">Image 1</div>
+                            </label>
+                            <label className="image-info" id="image-info-2">
+                                <div className="title">Image 2</div>
+                            </label>
+                            <label className="image-info" id="image-info-3">
+                                <div className="title">Image 3</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div className="progress-bar">
+                        <span className="progress"></span>
+                    </div>
+                </div>
             </div>
         </section>
         </>
