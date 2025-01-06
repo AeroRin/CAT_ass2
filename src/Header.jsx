@@ -3,6 +3,9 @@ import logo from './assets/logo.png';
 import food1 from './assets/food1.jpg';
 import food2 from './assets/food2.jpg';
 import food3 from './assets/food3.jpg';
+import about1 from './assets/about1.jpeg';
+import about2 from './assets/about2.jpg';
+import about3 from './assets/about3.jpg';
 import './Header.css';
 
 function Header() {
@@ -31,7 +34,7 @@ function Header() {
                 <h3>P</h3>
             </div>
         </header>
-        <section className="content-section">
+        <section className="content1-section">
             <div className="box-section">
             </div>
             <div className="C_TitleName">
@@ -41,8 +44,36 @@ function Header() {
             <div className="line"></div>
             <div className="C_TitleContent">
                 <p>Penang, is famed for its cultural diversity, heritage sites, and vibrant street food in George Town.</p>
-            </div> 
-            <div className="container">
+            </div>
+            <div className="About_Content">
+                <figure className="snip0016">
+                    <img src={about1} alt="sample41" />
+                    <figcaption>
+                        <h2>I think <span>nighttime</span> is dark</h2>
+                        <p>So you can imagine your fears with less distraction.</p>
+                        <a href="#"></a>
+                    </figcaption>
+                </figure>
+                <figure className="snip0016">
+                    <img src={about2} alt="sample42" />
+                    <figcaption>
+                        <h2>I suppose if we couldn <span>laugh</span></h2>
+                        <p>At things that make sense, we couldn react to a lot of life.</p>
+                        <a href="#"></a>
+                    </figcaption>
+                </figure>
+                <figure className="snip0016">
+                    <img src={about3} alt="sample43" />
+                    <figcaption>
+                        <h2>I think the <span>surest</span> sign </h2>
+                        <p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
+                        <a href="#"></a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section className="content2-section">
+        <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
                     <input type="radio" name="slider" id="item-2"></input>
                     <input type="radio" name="slider" id="item-3"></input>
@@ -60,10 +91,8 @@ function Header() {
                 <div className="player">
                     <div className="upper-part">
                         <div className="play-icon">
-                            <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" strokeLinejoin="round" strokeWidth="2" className="feather feather-play" viewBox="0 0 24 24">
                                 <defs/>
                                 <path d="M5 3l14 9-14 9V3z"/>
-                            </svg>
                         </div>
                         <div className="info-area" id="test">
                             <label className="image-info" id="image-info-1">
@@ -76,9 +105,6 @@ function Header() {
                                 <div className="title">Image 3</div>
                             </label>
                         </div>
-                    </div>
-                    <div className="progress-bar">
-                        <span className="progress"></span>
                     </div>
                 </div>
             </div>

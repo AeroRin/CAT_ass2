@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
 
 .header{
     background: url('./assets/HP_header.jpg') center center/cover no-repeat;
@@ -259,8 +260,8 @@ input[type=radio] {
   position: absolute;
   width: 70%;
   height: 100px;
-  top: 170px;
-  left: 490px;
+  top: 120px;
+  left: 450px;
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
@@ -271,8 +272,8 @@ input[type=radio] {
   top: 100px;
   left: 50px;
   width: 100%;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 600px;
+  max-height: 400px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
@@ -283,16 +284,20 @@ input[type=radio] {
 
 .cards {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 img {
-  width: 40%;
-  height: 300px;
+  width: 60%;
+  height: 300%;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform .4s ease, opacity .4s ease;
 }
 
 #item-1:checked ~ .cards #image-3, #item-2:checked ~ .cards #image-1, #item-3:checked ~ .cards #image-2 {
@@ -302,35 +307,33 @@ img {
 }
 
 #item-1:checked ~ .cards #image-2, #item-2:checked ~ .cards #image-3, #item-3:checked ~ .cards #image-1 {
-  transform: translatex(40%) scale(.8);
+  transform: translatex(27%) scale(.8);
   opacity: .4;
   z-index: 0;
 }
 
 #item-1:checked ~ .cards #image-1, #item-2:checked ~ .cards #image-2, #item-3:checked ~ .cards #image-3 {
-  transform: translatex(0) scale(1);
+  transform: translatex(0%) scale(1.2);
   opacity: 1;
   z-index: 1;
   
-  img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-  }
 }
 
 .player {
   position: relative;
   top: 450px;
-  left: 180px;
+  left: 277px;
   background-color: #fff;
   border-radius: 8px;
-  min-width: 320px;
-  padding: 16px 10px;
+  min-width: 200px;
+  padding: 3px 10px;
 }
 
 .upper-part {
   position: relative;
-  top: 20px;
-  left: 30px;
+  top: 7px;
+  left: 31px;
   display: flex;
   align-items: center;
   margin-bottom: 12px;
@@ -338,52 +341,148 @@ img {
   overflow: hidden;
 }
 
-.play-icon{ margin-right: 10px; }
-
-.image-info {
-  width: calc(100% - 32px);
-  display: block;
-}
-
 .image-info .title {
+  font-family: 'Ysabeau SC', serif;
   color: #403d40;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 24px;
-}
-
-.progress-bar {
-  height: 3px;
-  width: 100%;
-  background-color: #e9efff;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.progress {
-  display: block;
-  position: relative;
-  width: 60%;
-  height: 100%;
-  background-color: #2992dc;
-  border-radius: 6px;
 }
 
 .info-area {
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0px;
+  top: 7px;
+  left: 41px;
   transition: transform .4s ease-in;
 }
 
 #item-1:checked ~ .player #test {
-  transform: translateY(0);
+  transform: translateY(10);
 }
 
 #item-2:checked ~ .player #test  {
-  transform: translateY(-40px);
+  transform: translateY(-26px);
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-80px);
+  transform: translateY(-51px);
+}
+
+figure.snip0016 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 800px;
+  width: 100%;
+  background: #000000;
+  text-align: left;
+  border-radius: 10px;
+}
+figure.snip0016 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip0016 img {
+  width: 100%;
+  height: 1000px;
+  object-fit: contain;
+  max-height: 400px;
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.snip0016 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+figure.snip0016 figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.snip0016 h2,
+figure.snip0016 p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.snip0016 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip0016 h2 span {
+  font-weight: 800;
+}
+figure.snip0016 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip0016 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+figure.snip0016:hover img {
+  opacity: 0.3;
+}
+figure.snip0016:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+figure.snip0016:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.snip0016:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.About_Content {
+  display: flex; /* Displays the figures in a row */
+  flex-wrap: wrap; /* Allows wrapping if there are too many items to fit in one row */
+  justify-content: center; /* Center the figures horizontally */
+  gap: 20px; /* Adjust spacing between figures */
 }
