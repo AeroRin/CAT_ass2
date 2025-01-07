@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './assets/logo.png';
 import food1 from './assets/food1.jpg';
 import food2 from './assets/food2.jpg';
@@ -8,7 +8,12 @@ import about2 from './assets/about2.jpg';
 import about3 from './assets/about3.jpg';
 import './Header.css';
 
-function Header() {
+const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
+    const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <>
         <header className="header">
@@ -17,7 +22,7 @@ function Header() {
             <div className="logo">
                 <img src={logo} alt="Penang Logo" />
             </div>
-            <nav>
+            <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="#main">MAIN</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -26,6 +31,11 @@ function Header() {
                     <li><a href="#hotels">HOTELS</a></li>
                 </ul>
             </nav>
+            <button className="hamburger" onClick={toggleMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
             <div className="H_TitleName">
                 <h1>DISCOVER</h1>
                 <h2>W</h2>

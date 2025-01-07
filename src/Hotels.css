@@ -1,0 +1,12 @@
+.hotels{
+    background: url('./assets/HotelsBackground3.jpg') center center/cover no-repeat;
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
