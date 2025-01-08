@@ -46,7 +46,7 @@
     font-weight: lighter;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
     .logo img {
         height: 95px;
         left: 100px;
@@ -76,27 +76,6 @@
     color: #555;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px); /* Start slightly above */
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* End at the original position */
-  }
-}
-
-@media (max-width: 480px) {
-    .overlay-box {
-        width: 100%;
-        padding: 40px;
-    }
-}
-
 nav {
   user-select: none;
   position: absolute;
@@ -109,7 +88,7 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 14px;
   list-style: none;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: space-around; /* Spread items evenly */
@@ -118,7 +97,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 30px;
+  margin: 0 40px;
 }
 
 nav ul li a {
@@ -126,6 +105,7 @@ nav ul li a {
   color: white;
   position: relative;
   text-decoration: none;
+  text-align: center;
   font-size: 0.8rem;
   font-weight: 400;
   display: inline-block; /* Ensure the hover effect spans the entire text */
@@ -156,29 +136,89 @@ nav ul li a:hover {
   height: 8.5%; /* Match the height of the overlay box */
   flex-direction: column;
   justify-content: center; /* Center bars vertically */
-  gap: 5px;
+  gap: 7px;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 10; /* Ensure it appears on top of the overlay box */
+  z-index: 100; /* Ensure it appears on top of the overlay box */
   padding: 15px;
 }
 
 .hamburger .bar {
-  width: 25px;
-  height: 3px;
+  width:35px;
+  height: 6px;
   background-color: rgba(255, 255, 255, 0.799);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 @media (max-width: 1350px) {
+  nav {
+    left: 120px; /* Adjust 'left' to move the nav to the left */
+    margin-left: 70px; /* Adjust margin if needed */
+  }
+
+  nav ul li {
+    margin: 0 40px; /* Reduce the spacing between list items */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 1180px) {
+  nav {
+    left: 50px; /* Adjust 'left' to move the nav to the left */
+    margin-left: 135px; /* Adjust margin if needed */
+  }
+
+  nav ul li {
+    margin: 0 30px; /* Reduce the spacing between list items */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 1060px) {
+  nav {
+    left: 30px; /* Adjust 'left' to move the nav to the left */
+    margin-left: 135px; /* Adjust margin if needed */
+  }
+
+  nav ul li {
+    margin: 0 25px; /* Reduce the spacing between list items */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 950px) {
+  nav {
+    left: 30px; /* Adjust 'left' to move the nav to the left */
+    margin-left: 70px; /* Adjust margin if needed */
+  }
+
+  nav ul li {
+    margin: 0 20px; /* Reduce the spacing between list items */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 840px) {
   .nav-menu {
       display: none; /* Hide menu by default */
       position: absolute;
-      top: 50px;
+      top: 100px;
       right: 20px;
-      background-color: #352e2e;
+      background-color: rgba(94, 91, 91, 0.925);
       flex-direction: column;
       gap: 15px;
       padding: 20px;
@@ -187,7 +227,8 @@ nav ul li a:hover {
 
   .nav-menu.open {
       display: flex; /* Show menu when open */
-  }
+      z-index: 100; /* Ensure it appears on top of the overlay box */
+    }
 
   .hamburger {
      display: flex; /* Show hamburger on smaller screens */
