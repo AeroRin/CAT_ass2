@@ -8,6 +8,7 @@ const Hotels = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
     return (
         <>
         <header className='hotels'>
@@ -24,18 +25,23 @@ const Hotels = () => {
                     <li><a href="#hotels">HOTELS</a></li>
                 </ul>
             </nav>
-            <button className="hamburger" onClick={toggleMenu}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </button>
-            /<div>
-          <ul>
-            <li>Hotel A</li>
-            <li>Hotel B</li>
-            <li>Hotel C</li>
-          </ul>
-        </div>
+                <button className="hotelshamburger" onClick={toggleMenu}>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </button>
+                <div className="hotelscontent">
+                    <h1 className="hotels-title">HOTELS</h1>
+                    <div className="boxes">
+                        <div className="white-box">
+
+
+                        </div>
+                        <div className="gray-box"></div>
+                        <div className="white-box"></div>
+                        <div className="gray-box"></div>
+                    </div>
+                </div>
         </header>
         </>
     );
