@@ -41,66 +41,7 @@ const About = () => {
         <section className="content1-about">
             <h1>H</h1>
             <h2>ISTORY</h2>
-            <div className="container">
-                <div className="carousel">
-                    <input type="radio" name="slides" id="slide-1" defaultChecked />
-                    <input type="radio" name="slides" id="slide-2" />
-                    <input type="radio" name="slides" id="slide-3" />
-                    <input type="radio" name="slides" id="slide-4" />
-                    <input type="radio" name="slides" id="slide-5" />
-                    <input type="radio" name="slides" id="slide-6" />
-                    
-                    <ul className="carousel__slides">
-                        <li className="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src={history1} alt="Slide 1" />
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span className="credit">Photo: Tim Marshall</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        {/* Add other slides similarly */}
-                        <li className="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1041/800/450" alt="Slide 2" />
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span className="credit">Photo: Tim Marshall</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li className="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1041/800/450" alt="Slide 3" />
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span className="credit">Photo: Tim Marshall</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                    
-                    <ul className="carousel__thumbnails">
-                        <li>
-                            <label htmlFor="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""/></label>
-                        </li>
-                        <li>
-                            <label htmlFor="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""/></label>
-                        </li>
-                        <li>
-                            <label htmlFor="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""/></label>
-                        </li>
-                        {/* Add other thumbnails similarly */}
-                    </ul>
-                </div>
-            </div>
+            
         </section>
         </>
     );
