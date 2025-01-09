@@ -5,6 +5,8 @@ import about2 from './assets/AboutHistory2.jpg';
 import about3 from './assets/AboutHistory3.jpg';
 import about4 from './assets/AboutHistory4.jpeg';
 import about5 from './assets/AboutHistory5.jpeg';
+import about6 from './assets/AboutWeather1.jpeg';
+import about7 from './assets/AboutWeather2.jpg';
 import './About.css';
 
 const About = () => {
@@ -23,11 +25,11 @@ const About = () => {
                 </div>
                 <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li><a href="#main">MAIN</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#tourist-spots">TOURIST SPOTS</a></li>
-                        <li><a href="#local-taste">LOCAL TASTE</a></li>
-                        <li><a href="#hotels">HOTELS</a></li>
+                        <li><a href="/header">MAIN</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
+                        <li><a href="/local-taste">LOCAL TASTE</a></li>
+                        <li><a href="/hotels">HOTELS</a></li>
                     </ul>
                 </nav>
                 <button className="hamburger" onClick={toggleMenu}>
@@ -50,7 +52,7 @@ const About = () => {
                     <img src={about1} alt="About_history"/>
                         <div className="card-info">
                             <h1>Year of 1786</h1>
-                            <p>Captain Francis Light of the British East India Company established Penang as Fort Cornwallis, the first British trading post in the Far East.Light persuaded the Sultan of Kedah to give the island to the British in exchange for military protection. </p>
+                            <p>Captain Francis Light of the British East India Company established Penang as Fort Cornwallis, the first British trading post in the Far East.Light persuaded the Sultan of Kedah to give the island to the British in exchange for military protection.</p>
                         </div>
                 </div>
                 <div className="card2">
@@ -120,6 +122,12 @@ const About = () => {
                         </p>
                         </li>
                     </ul>
+                    <div className="RainyPic">
+                        <img src={about6} alt="Weather Background" />
+                    </div>
+                    <div className="DryPic">
+                        <img src={about7} alt="Weather Background" />
+                    </div>
                 </div>
             </section>
         </>
