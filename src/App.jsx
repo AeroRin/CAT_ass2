@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Hotels from './Hotels.jsx' 
 import About from './About.jsx'
 import TS from './TouristSpot.jsx'
+import Food from './Food.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/TouristSpot",
     element: <TS />, 
+  },
+  {
+    path: "/Food",
+    element: <Food />, 
   },
   {
     path: "*", // Catch-all route for undefined paths

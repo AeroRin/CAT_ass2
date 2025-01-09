@@ -15,7 +15,7 @@
     box-sizing: border-box; /* Include padding/borders in the width */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .header {
         height: 70vh;
     }
@@ -30,7 +30,7 @@
 .logo{
     position: absolute;
     top: -8px;
-    left: 100px;
+    left: 25px;
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -44,16 +44,7 @@
 .logo span{
     font-size: 0.8rem;
     font-weight: lighter;
-}
-
-@media (max-width: 1350px) {
-    .logo img {
-        height: 95px;
-        left: 100px;
-    }
-    .logo{
-      left: 10px;
-    }
+    left: 10px;
 }
 
 .overlay-box {
@@ -80,7 +71,7 @@ nav {
   user-select: none;
   position: absolute;
   top: 23px;
-  left: 300px;
+  left: 270px;
   display: flex;
   align-items: center;
   margin-left: 70px;
@@ -101,7 +92,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: 'Ysabeau SC', serif;
+  font-family: 'Ysabeau SC';
   color: white;
   position: relative;
   text-decoration: none;
@@ -114,7 +105,7 @@ nav ul li a {
 
 nav ul li a {
   color: white;
-  font-family: 'Ysabeau SC', serif;
+  font-family: 'Ysabeau SC';
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.5;
@@ -133,7 +124,7 @@ nav ul li a:hover {
   position: absolute;
   top: 10px; /* Align with the top of the screen or overlay box */
   right: 25px; /* Adjust spacing from the right edge */
-  height: 8.5%; /* Match the height of the overlay box */
+  height: 7%; /* Match the height of the overlay box */
   flex-direction: column;
   justify-content: center; /* Center bars vertically */
   gap: 7px;
@@ -199,12 +190,12 @@ nav ul li a:hover {
 
 @media (max-width: 950px) {
   nav {
-    left: 30px; /* Adjust 'left' to move the nav to the left */
+    left: 50px; /* Adjust 'left' to move the nav to the left */
     margin-left: 70px; /* Adjust margin if needed */
   }
 
   nav ul li {
-    margin: 0 20px; /* Reduce the spacing between list items */
+    margin: 0 15px; /* Reduce the spacing between list items */
   }
 
   nav ul li a {
@@ -224,11 +215,11 @@ nav ul li a:hover {
       padding: 20px;
       border-radius: 15px;
   }
-
+  
   .nav-menu.open {
       display: flex; /* Show menu when open */
       z-index: 100; /* Ensure it appears on top of the overlay box */
-    }
+  }
 
   .hamburger {
      display: flex; /* Show hamburger on smaller screens */
