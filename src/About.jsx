@@ -88,6 +88,39 @@ const About = () => {
                 <h3>K</h3>
                 <h4>IT</h4>
                 <div className="TravelBox"></div>
+                <div className="TravelText">
+                    <p>1. Wear light clothing – Penang is hot and humid year-round.</p>
+                    <p>2. Bring a power bank – You’ll take lots of photos!</p>
+                    <p>3. Use Grab or Rapid Penang – Convenient ways to get around.</p>
+                    <p>4. Stay hydrated – It’s easy to get dehydrated when exploring.</p>
+                    <p>5. Respect local customs – Especially when visiting religious sites.</p>
+                </div>
+            </section>
+            <section className="content3-about">
+                <div className="container">
+                    <h1>W</h1>
+                    <h2>EATHER</h2>
+                    <h3 className="WeatherTitle">What to Expect</h3>
+                    <p className="WeatherText">
+                        Penang has a tropical climate with warm temperatures ranging
+                        from 25°C to 32°C throughout the year. The weather is
+                        generally hot and humid, with two main seasons:
+                    </p>
+                    <ul>
+                        <li>
+                        <h3 className="Dry">Dry Season (December to April)</h3>
+                        <p className="DryText">
+                            Best time to visit with plenty of sunshine. Ideal for outdoor activities, beach visits, and sightseeing.
+                        </p>
+                        </li>
+                        <li>
+                        <h3 className="Rain">Rainy Season (May to November)</h3>
+                        <p className="RainText">
+                            Expect frequent showers, especially in the afternoon. The rain is usually short but heavy, so bring an umbrella or raincoat.
+                        </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </>
     );

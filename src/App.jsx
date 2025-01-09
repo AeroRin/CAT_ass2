@@ -3,11 +3,13 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Header from './Header.jsx' 
 import Hotels from './Hotels.jsx' 
 import About from './About.jsx'
+import TS from './TouristSpot.jsx'
+import Food from './Food.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Hotels />, // Default route (you can change to a homepage component)
+    element: <Header />, // Default route (you can change to a homepage component)
   },
   {
     path: "/header",
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/TouristSpot",
+    element: <TS />, 
+  },
+  {
+    path: "/Food",
+    element: <Food />, 
   },
   {
     path: "*", // Catch-all route for undefined paths

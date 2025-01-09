@@ -1,0 +1,497 @@
+/* Background Container for All Sections */
+.TS-background {
+    width: 100%;
+    height: auto;
+    padding: 50px 0; /* Optional: Adjust spacing for layout */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Space out the section blocks evenly */
+    z-index: 1; /* Ensure it stays behind content */
+}
+
+/* Semi-transparent overlay for 40% opacity */
+.TS-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/penangbridge.jpg') center center/cover no-repeat; /* Background image */
+    opacity: 0.3; /* 40% opacity */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Above the background */
+}
+
+.TouristSpot{
+    background: url('./assets/TSBackground3.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding-top: 90px; /* Adjust to move items vertically */
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.section-title {
+    font-size: 3rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: white;
+    background-color: yellow; /* Highlight text with yellow */
+    padding: 5px 15px; /* Add padding for the highlight */
+    border-radius: 5px; /* Rounded edges for the background */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the title */
+    display: inline-block; /* Ensure background wraps around the text */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    display: inline-block; /* Wrap the background tightly around the text */
+    width: auto; /* Ensure title is not stretched */
+    align-self: flex-start; /* Align the title to the top within the container */
+}
+
+/* Hamburger Button Styles */
+.TShamburger {
+    display: none; /* Hidden on larger screens */
+    position: absolute;
+    top: 0; /* Align with the top of the screen or overlay box */
+    right: 25px; /* Adjust spacing from the right edge */
+    height: 8.5%; /* Match the height of the overlay box */
+    flex-direction: column;
+    justify-content: center; /* Center bars vertically */
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100; /* Ensure it appears on top of the overlay box */
+    padding: 15px;
+  }
+  
+  .TShamburger .bar {
+    width:35px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.799);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 840px) {
+    .TShamburger {
+        display: flex; /* Show hamburger on smaller screens */
+     }
+   }
+
+.TScontent-SM {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 80px 0; /* Optional: Add vertical padding if needed */
+    display: flex; /* Flex container for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+}
+
+.TScontent-HP {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 80px 0; /* Optional: Add vertical padding if needed */
+    display: flex; /* Flex container for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+}
+
+.TScontent-Top3 {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 80px 0; /* Optional: Add vertical padding if needed */
+    display: flex; /* Flex container for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+}
+
+.TScontent-NM {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 80px 0; /* Optional: Add vertical padding if needed */
+    display: flex; /* Flex container for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+}
+
+.TS-title {
+    font-size: 15rem;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+}
+
+.boxes1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust the width of the container */
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the boxes */
+}
+
+.boxes2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust the width of the container */
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the boxes */
+}
+
+.boxes3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust the width of the container */
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the boxes */
+}
+
+.boxes4 {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust the width of the container */
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the boxes */
+}
+
+
+/* General Styles for Tourist Spot Page */
+.TS-background {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.display-box {
+    position: relative;
+    background: rgb(255, 255, 245);
+    width: 100%; /* Ensure full-width for responsive design */
+    max-width: 1200px; /* Limit the maximum width */
+    height: 400px; /* Fixed height */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 
+        10px 10px 2px rgba(0, 0, 0, 0.2), /* Stronger bottom shadow */
+        8px 8px 2px rgba(0, 0, 0, 0.1), /* Subtle top shadow for light direction */
+        inset 0 -2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for inset effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add interaction effect */
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+
+.box-content {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+    align-items: flex-start; /* Align content to the start */
+}
+
+.box-title1 {
+    position: flex; /* Absolute positioning */
+    top: 15px; /* Adjust vertical position */
+    left: 15px; /* Adjust horizontal position */
+    z-index: 3; /* Ensure it appears above other elements */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #d9d9d9; /* Highlight the title with yellow */
+    color: black; /* Set the text color to black for contrast */
+    padding: 5px 10px; /* Add padding around the title for a highlighted effect */
+    border-radius: 5px; /* Optional: Rounded corners for the highlight */
+}
+
+.box-title2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #E5E5E5; /* Highlight the title with yellow */
+    color: black; /* Set the text color to black for contrast */
+    padding: 5px 10px; /* Add padding around the title for a highlighted effect */
+    border-radius: 5px; /* Optional: Rounded corners for the highlight */
+}
+
+.box-title3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #F5F5F5; /* Highlight the title with yellow */
+    color: black; /* Set the text color to black for contrast */
+    padding: 5px 10px; /* Add padding around the title for a highlighted effect */
+    border-radius: 5px; /* Optional: Rounded corners for the highlight */
+}
+
+.box-title4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #F3F3F3; /* Highlight the title with yellow */
+    color: black; /* Set the text color to black for contrast */
+    padding: 5px 10px; /* Add padding around the title for a highlighted effect */
+    border-radius: 5px; /* Optional: Rounded corners for the highlight */
+}
+
+
+
+.box-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: flex; /* Absolute positioning */
+    top: 60px; /* Adjust vertical position to be below the title */
+    left: 15px; /* Align with the box-title */
+    color: black; /* Set text color */
+    z-index: 3; /* Ensure it appears above other elements */
+}
+
+.box-description,
+.box-address,
+.box-hours {
+    text-align: left; /* Ensure individual text elements are aligned left */
+    margin-bottom: 10px; /* Add spacing between elements */
+}
+
+.box-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(214, 211, 211, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    z-index: 3;
+  }
+  
+  .arrow.left {
+    left: -0px;
+  }
+  
+  .arrow.right {
+    right: -0px;
+  }
+  
+  .arrow:hover {
+    background: rgba(136, 133, 133, 0.662);
+  }
+  
+
+@media (max-width: 768px) {
+    .display-box {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow content to adjust its height */
+    }
+
+    .box-content {
+        width: 100%; /* Take up full width */
+        text-align: center; /* Center text for better presentation */
+    }
+
+    .box-image {
+        width: 100%; /* Ensure the image takes up full width */
+        height: auto; /* Allow the image height to adjust according to the aspect ratio */
+    }
+
+    .box-image img {
+        width: 100%; /* Stretch the image to fill the container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image covers the area */
+    }
+}
+    
+    .floating-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #4e4f51;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 9999;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling for better visibility */
+      }
+
+      .floating-icon:hover {
+        background-color: #f0f0f0b7;
+      }
+      
+      .floating-icon.active .categories-list {
+        display: block;
+      }
+      
+      .categories-list {
+        position: absolute;
+        bottom:70px;
+        right:0;
+        background-color: rgb(44, 42, 42);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow : hidden ;
+      }
+      
+      .categories-list div {
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      
+      .categories-list div:hover {
+        background-color: #d2cfcf;
+      }
+
+      @media (max-width: 1260px) {
+        .floating-icon {
+          position: fixed;
+          bottom: 20px; /* Keep the icon 20px from the bottom */
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #4e4f51;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          z-index: 1000;
+        }
+        
+        .floating-icon:hover {
+          background-color: #f0f0f0b7;
+        }
+        
+        .floating-icon.active .categories-list {
+          display: block;
+        }
+        
+        .categories-list {
+          position: absolute;
+          bottom: 60px;
+          right: 0;
+          background-color: rgb(44, 42, 42);
+          padding: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          display: none;
+        }
+      
+        .categories-list div {
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      
+        .categories-list div:hover {
+          background-color: #d2cfcf;
+        }
+      }
+      
+/* Media Queries for Fine-tuning */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .floating-icon {
+        bottom: 30px; /* Adjust for tablet screens */
+        right: 30px;
+        width: 70px; /* Larger size for tablet */
+        height: 70px;
+    }
+
+    .categories-list {
+        right: 30px;
+        bottom: 80px; /* Adjust position */
+        padding: 15px; /* Larger padding for easier click */
+    }
+    .categories-list div {
+        font-size: 1.2rem; /* Increase font size for better readability */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+@media (min-width: 1024px) { 
+    .floating-icon {
+        bottom: 40px; /* Adjust for larger screens */
+        right: 40px;
+        width: 80px; /* Larger size for laptop */
+        height: 80px;
+    }
+
+    .categories-list {
+        bottom: 90px; /* Adjust position */
+        padding: 20px; /* Larger padding */
+    }
+
+    .categories-list div {
+        font-size: 1.5rem; /* Increase font size further */
+        padding: 15px 20px; /* Adjust padding */
+    }
+
+     /* .categories-list div {
+        font-size: 1.5rem; 
+    }  */
+    }
