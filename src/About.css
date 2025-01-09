@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+AU+SA:wght@100..400&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 .about{
     background: url('./assets/AboutBackground1.jpg') center center/cover no-repeat;
@@ -422,7 +425,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    top: 6vh;
+    top: 5.2vh;
     left: 2.8vw;
     border-radius: 20px;
     box-sizing: border-box; /* Include padding/borders in the width */
@@ -430,48 +433,48 @@
 
     .content2-about h1{
         user-select: none;
-        font-size: 8rem;
+        font-size: 6.5rem;
         font-weight: 400;
         color: black;
         position: relative;
         top: -33vh;
-        left: 39.5vw;
+        left: 42vw;
     }
 
     .content2-about h2{
         user-select: none;
-        font-size: 6.4rem;
+        font-size: 4.9rem;
         font-weight: 400;
         color: black;
         position: relative;
         top: -31.8vh;
-        left: 40vw;
+        left: 42.3vw;
     }
 
     .content2-about h3{
         user-select: none;
-        font-size: 7rem;
+        font-size: 5.5rem;
         font-weight: 400;
         color: black;
         position: relative;
-        top: -17vh;
-        left: 26.5vw;
+        top: -19vh;
+        left: 7vw;
     }
 
     .content2-about h4{
         user-select: none;
-        font-size: 5.4rem;
+        font-size: 3.9rem;
         font-weight: 400;
         color: black;
         position: relative;
-        top: -15.7vh;
-        left: 27vw;
+        top: -17.7vh;
+        left: 7.5vw;
     }
 
     .TravelBox{
         position: absolute;
-        top: 5.2vh;
-        left: 2.5vw;
+        top: 4.9vh;
+        left: 3vw;
         background:  url('./assets/AboutBackground3.jpeg') center center/cover no-repeat;
         height: 81vh;
         width: 35vw;
@@ -483,3 +486,179 @@
         object-fit: contain;
         box-sizing: border-box; /* Include padding/borders in the width */
     }
+
+    .TravelText p{
+        user-select: none;
+        font-family: "Ysabeau SC", serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+        top: 13vh;
+        left: -3vw;
+        padding: 4px;
+    }
+
+    .content3-about{
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('./assets/AboutBackground4.jpg') center center/cover no-repeat;
+      height: 125vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      object-fit: contain;
+      position: relative;
+      top: 11vh;
+      box-sizing: border-box; /* Include padding/borders in the width */
+    }
+
+    .content3-about h1{
+      user-select: none;
+      font-size: 7rem;
+      font-weight: 400;
+      color: black;
+      position: absolute;
+      margin-top: -100vh;
+      margin-left: -35vw;
+    }
+
+    .content3-about h2{
+      user-select: none;
+      font-size: 5.4rem;
+      font-weight: 400;
+      color: black;
+      position: absolute;
+      margin-top: -100.2vh;
+      margin-left: 0vw;
+    }
+
+    .content3-about h3.WeatherTitle{
+      font-family:'Courier New', Courier, monospace;
+      user-select: none;
+      font-size: 5rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      margin-top: -15vh;
+      margin-left: 10vw;
+      white-space: nowrap;
+    }
+
+    .content3-about p.WeatherText{
+      user-select: none;
+      font-family: "Caveat", serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      margin-top: -80px;
+      margin-left: 35px;
+    }
+
+    .content3-about h3{
+      user-select: none;
+      font-family: "Playwrite AU SA", serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      margin-top: -40px;
+      margin-left: 1vw;
+    }
+
+    .content3-about p{
+      user-select: none;
+      font-family: "Caveat", serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      margin-top: -20px;
+      margin-left: 1vw;
+    }
+
+    /*
+    .content3-about div{
+      width: 95%;
+      max-width: 300vw;
+    }
+    
+    .content3-about h1{
+      user-select: none;
+      font-size: 7.4rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: 40vh;
+      left: -43vw;
+    }
+    
+    .content3-about h2{
+      user-select: none;
+      font-size: 6rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: -4.3vh;
+      left: -24.4vw;
+    }
+
+    .content3-about h3{
+      font-family:'Courier New', Courier, monospace;
+      user-select: none;
+      font-size: 4.4rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: -27vh;
+      left: -24vw;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .content3-about p{
+      user-select: none;
+      font-family: "Ysabeau SC", serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: -40vh;
+      left: -0.5vw;
+      padding: 4px;
+    }
+
+    .content3-about h3.Dry{
+      user-select: none;
+      font-family: "Anton", serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: -40vh;
+      left: -35vw;
+      padding: 4px;
+      text-align: flex-start;
+    }
+
+    .content3-about h3.Rain{
+      user-select: none;
+      font-family: "Anton", serif;
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: black;
+      position: relative;
+      top: -35vh;
+      left: -3.5vw;
+      padding: 4px;
+      text-align: flex-start;
+    }
+
+    .content3-about li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+   */
