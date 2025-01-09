@@ -46,7 +46,7 @@
 
 
 :root {
-    --hotels-highlight: #91cb3e;
+    --hotels-highlight: #ffffff;
     --hotels-body-pad-top: 70px;
   }
   
@@ -92,6 +92,7 @@
     text-decoration: none;
     font-size: 24px;
     transition: color 0.3s;
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
   
 .hotels-nav a:hover {
@@ -109,14 +110,28 @@
     font-size: 36px;
     margin-bottom: 10px;
 }
+
   
 .hotels-subheading {
     color: #666;
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+#intro h2 {
+    display: block; /* Ensure heading is on its own row */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+#intro p {
+    display: block; /* Ensure paragraph is on its own row */
+    font-size: 1rem; /* Adjust font size for paragraph */
+    line-height: 1.5; /* Increase readability */
+}
   
 .hotels-section {
+    display: block;
     margin-bottom: 40px;
 }
   
@@ -140,7 +155,7 @@
     position: sticky; /* Fix the icon to the screen */
     top: 25px; /* Align with the top of the screen */
     left: 20px; /* Fixed position on the left */
-    height: 3.8%; /* Match the height of the overlay box */
+    height: 4%; /* Match the height of the overlay box */
     flex-direction: column;
     justify-content: center; /* Center bars vertically */
     gap: 7px;
@@ -182,6 +197,12 @@
         text-decoration: none;
         font-size: 25px;
         transition: color 0.3s;
+    }
+
+    .hotels-nav a:hover {
+        background-color: var(--hotels-highlight); /* Highlight background */
+        color: #49cd42; /* Maintain text color during hover */
+        border-radius: 8px; /* Optional: match the nav bar's border-radius */
     }
   
     .hotels-nav.open {

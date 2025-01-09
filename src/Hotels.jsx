@@ -105,15 +105,16 @@ const Hotels = () => {
                 <h1>Stays of Penang</h1>
                 <div className="hotels-subheading">Crafted for Your Comfort, Inspired by its Culture.</div>
 
-                <section id="intro">
-                <h2>Intro</h2>
-                <p>Penang, a vibrant island that blends heritage, culture, and modernity. Known as the Pearl
-                     of the Orient, Penang offers visitors a unique experience of colonial architecture, tantalizing 
-                     cuisines, and breathtaking landscapes. Whether you're here for a relaxing getaway, a cultural 
-                     adventure, or a luxurious retreat, Penang's hotels provide the perfect sanctuary to complement
-                      your journey. Discover four of the finest accommodations that promise comfort, elegance, and 
-                      unforgettable memories.
-                </p>
+                <section id="intro" style={{ display: 'block', marginBottom: '20px' }}>
+                    <h2 style={{ display: 'block', marginBottom: '10px', fontSize: '1.5rem' }}>Intro</h2>
+                    <p style={{ display: 'block', fontSize: '1rem', lineHeight: '1.5' }}>
+                        Penang, a vibrant island that blends heritage, culture, and modernity. Known as the Pearl
+                        of the Orient, Penang offers visitors a unique experience of colonial architecture,
+                        tantalizing cuisines, and breathtaking landscapes. Whether you're here for a relaxing
+                        getaway, a cultural adventure, or a luxurious retreat, Penang's hotels provide the
+                        perfect sanctuary to complement your journey. Discover four of the finest accommodations
+                        that promise comfort, elegance, and unforgettable memories.
+                    </p>
                 </section>
                     {hotels.map(hotel => (
                         <section key={hotel.id} id={hotel.id} className="hotels-section">
