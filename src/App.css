@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Include padding/borders in the width */
+    width: 100%; /* Ensure full width */
 }

@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.about{
+    background: url('./assets/AboutBackground1.jpg') center center/cover no-repeat;
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.overlay-boxA{
+    position: absolute;
+    top: 79.6px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    height: 103vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.A_TitleName h1{
+    user-select: none;
+    font-size: 8rem;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 195px;
+    left: 250px;
+}
+
+.A_TitleName h2{
+    user-select: none;
+    font-size: 6.4rem;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 219px;
+    left: 347px;
+}
+
+.A_TitleName h3{
+    user-select: none;
+    font-size: 9rem;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 260px;
+    left: 190px;
+}
+
+.A_TitleName h4{
+    user-select: none;
+    font-size: 7.4rem;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 269px;
+    left: 273px;
+}
+
+.content1-about{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('./assets/AboutBackground2.jpg') center center/cover no-repeat;
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.content1-about h1{
+    user-select: none;
+    font-size: 8rem;
+    font-weight: 400;
+    color: black;
+    position: relative;
+    top: -430px;
+    left: 400px;
+}
+
+.content1-about h2{
+    user-select: none;
+    font-size: 6.4rem;
+    font-weight: 400;
+    color: black;
+    position: relative;
+    top: -420px;
+    left: 405px;
+}
+
+.wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+ .card1 {
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    padding: rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
+    top: 170px;
+    left: 75px;
+    margin: 30px;
+  } 
+
+  .card2 {
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    padding: rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
+    top: 170px;
+    left: 450px;
+    margin: 30px;
+  }
+
+  .card3 {
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    padding: rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
+    top: 170px;
+    left: 825px;
+    margin: 30px;
+  }
+
+  .card5 {
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    padding: rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
+    top: 600px;
+    left: 637.5px;
+    margin: 30px;
+  }
+
+  .card4 {
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    padding: rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.6);
+    top: 600px;
+    left: 262.5px;
+    margin: 30px;
+  }
+
+  .card1:hover {
+    transform: translateY(20px);
+  }
+  
+  .card1:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .card1:hover:before {
+    opacity: 1;
+  }
+
+  .card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 0;
+  }
+  
+  .card-info {
+    position: absolute;
+    top: 100px;
+    left: 2px;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: 0.5s;
+    width: 90%; /* Ensure the text stays inside the card */
+    padding: 15px; /* Add padding for better spacing */
+    overflow: hidden; /* Prevent overflow */
+    text-align: left;
+  }
+
+  .card1:hover .card-info{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card-info p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    user-select: none;
+  }
+
+  .card-info h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0px;
+    user-select: none;
+    top: 0px;
+    left: 0px;
+  }
+
+  .card2:hover {
+    transform: translateY(20px);
+  }
+  
+  .card2:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .card2:hover:before {
+    opacity: 1;
+  }
+
+  .card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .card3:hover {
+    transform: translateY(20px);
+  }
+  
+  .card3:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .card3:hover:before {
+    opacity: 1;
+  }
+
+  .card3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 0;
+  }
+  
+  .card4:hover {
+    transform: translateY(20px);
+  }
+  
+  .card4:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card4:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .card4:hover:before {
+    opacity: 1;
+  }
+
+  .card4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .card5:hover {
+    transform: translateY(20px);
+  }
+  
+  .card5:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .card5:hover:before {
+    opacity: 1;
+  }
+
+  .card5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 0;
+  }
+
+  .content2-about{
+    background: rgba(197, 171, 68, 0.6);
+    height: 90vh;
+    width: 93vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 6vh;
+    left: 2.8vw;
+    border-radius: 20px;
+    box-sizing: border-box; /* Include padding/borders in the width */
+  }
+
+    .content2-about h1{
+        user-select: none;
+        font-size: 8rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+        top: -33vh;
+        left: 39.5vw;
+    }
+
+    .content2-about h2{
+        user-select: none;
+        font-size: 6.4rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+        top: -31.8vh;
+        left: 40vw;
+    }
+
+    .content2-about h3{
+        user-select: none;
+        font-size: 7rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+        top: -17vh;
+        left: 26.5vw;
+    }
+
+    .content2-about h4{
+        user-select: none;
+        font-size: 5.4rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+        top: -15.7vh;
+        left: 27vw;
+    }
+
+    .TravelBox{
+        position: absolute;
+        top: 5.2vh;
+        left: 2.5vw;
+        background:  url('./assets/AboutBackground3.jpeg') center center/cover no-repeat;
+        height: 81vh;
+        width: 35vw;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        object-fit: contain;
+        box-sizing: border-box; /* Include padding/borders in the width */
+    }
