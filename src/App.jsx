@@ -5,6 +5,7 @@ import Hotels from './Hotels.jsx'
 import About from './About.jsx'
 import TS from './TouristSpot.jsx'
 
+
 const router = createBrowserRouter([
   {
     path: "/",

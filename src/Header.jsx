@@ -10,6 +10,10 @@ import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleExploreClick = () => {
+        window.location.href = "/TouristSpot"; // Replace with the actual URL
+      };
     
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,7 +30,7 @@ const Header = () => {
                 <ul>
                     <li><a href="#main">MAIN</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#tourist-spots">TOURIST SPOTS</a></li>
+                    <li><a href="TouristSpot">TOURIST SPOTS</a></li>
                     <li><a href="#local-taste">LOCAL TASTE</a></li>
                     <li><a href="#hotels">HOTELS</a></li>
                 </ul>
@@ -44,6 +48,7 @@ const Header = () => {
                 <h3>P</h3>
             </div>
         </header>
+
         <section className="content1-section">
             <div className="box-section">
             </div>
@@ -82,6 +87,7 @@ const Header = () => {
                 </figure>
             </div>
         </section>
+
         <section className="content2-section">
         <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
@@ -119,6 +125,39 @@ const Header = () => {
                 </div>
             </div>
         </section>
+
+        <div className='TSMainBackground'>
+    <section className="TSMaincontainer">
+  <div>
+    <div class="TSMaincontent">
+      <h2>Shopping Mall</h2>
+      <span>I like shopping !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Histotical Place</h2>
+      <span>I super duper like Playing !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Top 3 recommend</h2>
+      <span>Oops ! Where is it !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Night Market</h2>
+      <span>12 AM already? Night Time !</span>
+    </div>
+  </div>
+</section>
+<div className="TSMainInfo">
+        <h1>Explore the Penang with Us!</h1>
+        <button onClick={handleExploreClick}>Explore Now!</button>
+      </div>
+</div>
         </>
     );
 }

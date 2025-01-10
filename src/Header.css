@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 .header{
     background: url('./assets/HP_header.jpg') center center/cover no-repeat;
@@ -585,6 +586,192 @@ figure.snip0016:hover figcaption::before {
   gap: 20px; /* Adjust spacing between figures */
 }
 
-/* .About_Content figure {
- 
-} */
+
+
+.TSMainBackground {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Default column layout for smaller screens */
+  align-items: center;
+  background: #100721;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.TSMaincontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+  height: auto;
+  gap: 28px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./assets/SMMain2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("./assets/HPMain2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("./assets/Top3Main2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("./assets/NMMain2.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .TSMaincontent {
+      font-size: 2.0rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 500px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .TSMaincontent {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.TSMainInfo {
+    flex: 1; /* Ensure it takes up space on the right */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .TSMainInfo::before {
+    content: ""; /* Create a visual element */
+    position: absolute;
+    left: 0; /* Position it to the left */
+    top: 0;
+    height: 100%; /* Full height of the info section */
+    width: 5px; /* Adjust the thickness of the line */
+    background-color: green; /* Set the color of the line */
+  }
+  .TSMainInfo h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .TSMainInfo button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #29c282;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .TSMainInfo button:hover {
+    background-color: #8e61e8;
+  }
+  
+  /* Responsive adjustments for smaller devices */
+  @media screen and (max-width: 1499px) {
+    .TSMainBackground {
+      flex-direction: column;
+    }
+  
+    .TSMaincontainer {
+      flex: none;/* Take up equal space with TSMainInfo */
+      margin-bottom: 20px;
+    }
+  
+    .TSMainInfo {
+      text-align: left;
+      flex:1;
+      display: flex; /* Use flexbox for centering */
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+      height: auto; /* Optional: Adjust height if needed */
+    }
+
+    .TSMainInfo button {
+        padding: 7px 80px; /* Bigger padding for button */
+        font-size: 1.50rem; /* Larger font size for button text */
+      }
+
+      .TSMainInfo::before {
+        display:none;
+      }
+  }
+
+  /* Layout adjustments for tablets and laptops */
+@media screen and (min-width: 1500px) {
+    .TSMainBackground {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+      align-items: center; /*Center items vertically*/
+    }
+  
+    .TSMaincontainer {
+      flex: 1; /* Take up equal space with TSMainInfo */
+      height: 500px; /* Maintain height */
+    }
+  
+    .TSMainInfo {
+      flex: 1; /* Align on the right */
+      text-align: left; /* Align text to the left for larger screens */
+    }
+
+    .TSMainInfo h1 {
+        font-size: 2.5rem; /* Larger font size for headline */
+        margin-bottom: 30px;
+      }
+    
+      .TSMainInfo button {
+        padding: 15px 100px; /* Bigger padding for button */
+        font-size: 1.25rem; /* Larger font size for button text */
+      }
+  }
+
+
+
+
+
+
