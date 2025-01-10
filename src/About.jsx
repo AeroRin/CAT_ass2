@@ -39,15 +39,12 @@ const About = () => {
                 </button>
                 <div className="overlay-boxA"></div>
                 <div className="A_TitleName">
-                    <h1>A</h1>
-                    <h2>BOUT</h2>
-                    <h3>P</h3>
-                    <h4>ENANG</h4>
+                    <h1>About</h1>
+                    <h2>Penang</h2>
                 </div>
             </header>
             <section className="content1-about">
-                <h1>H</h1>
-                <h2>ISTORY</h2>
+                <h1>History</h1>
                 <div className="card1">
                     <img src={about1} alt="About_history"/>
                         <div className="card-info">
@@ -85,10 +82,7 @@ const About = () => {
                 </div>
             </section>
             <section className="content2-about">
-                <h1>T</h1>
-                <h2>RAVELING</h2>
-                <h3>K</h3>
-                <h4>IT</h4>
+                <h1>Traveling Tips</h1>
                 <div className="TravelBox"></div>
                 <div className="TravelText">
                     <p>1. Wear light clothing – Penang is hot and humid year-round.</p>
@@ -99,36 +93,33 @@ const About = () => {
                 </div>
             </section>
             <section className="content3-about">
-                <div className="container">
-                    <h1>W</h1>
-                    <h2>EATHER</h2>
-                    <h3 className="WeatherTitle">What to Expect</h3>
-                    <p className="WeatherText">
-                        Penang has a tropical climate with warm temperatures ranging
-                        from 25°C to 32°C throughout the year. The weather is
-                        generally hot and humid, with two main seasons:
-                    </p>
-                    <ul>
-                        <li>
-                        <h3 className="Dry">Dry Season (December to April)</h3>
-                        <p className="DryText">
-                            Best time to visit with plenty of sunshine. Ideal for outdoor activities, beach visits, and sightseeing.
-                        </p>
-                        </li>
-                        <li>
-                        <h3 className="Rain">Rainy Season (May to November)</h3>
-                        <p className="RainText">
-                            Expect frequent showers, especially in the afternoon. The rain is usually short but heavy, so bring an umbrella or raincoat.
-                        </p>
-                        </li>
-                    </ul>
-                    <div className="RainyPic">
-                        <img src={about6} alt="Weather Background" />
-                    </div>
-                    <div className="DryPic">
-                        <img src={about7} alt="Weather Background" />
-                    </div>
+            <div className="container">
+                {/* Dry Season Section */}
+                <div className="Weather_Block">
+                <div className="Weather_Text">
+                    <h1>Weather</h1>
+                    <p className="WeatherText"> Penang has a tropical climate with warm temperatures ranging
+                            from 25°C to 32°C throughout the year. The weather is
+                            generally hot and humid, with two main seasons:</p>
+                    <h3 className="Dry">Dry Season (December to April)</h3>
+                    <p className="DryText">Best time to visit with plenty of sunshine. Ideal for outdoor activities, beach visits, and sightseeing.</p>
                 </div>
+                <div className="Weather_Image">
+                    <img className="Dry_Season_Image" src={about7} alt="Dry Season" />
+                </div>
+                </div>
+
+                {/* Rainy Season Section */}
+                <div className="Weather_Block">
+                <div className="Weather_Text">
+                    <h3 className="Rain">Rainy Season (May to November)</h3>
+                    <p className="RainText">Expect frequent showers, especially in the afternoon. The rain is usually short but heavy, so bring an umbrella or raincoat.</p>
+                </div>
+                <div className="Weather_Image">
+                    <img className="Rainy_Season_Image" src={about6} />
+                </div>
+                </div>
+            </div>
             </section>
         </>
     );
