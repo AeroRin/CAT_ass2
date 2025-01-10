@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.Food {
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  background: url('../images/penang_banner.jpg') no-repeat center center/cover; /* Penang banner background */
+  text-align: center;
+}
+
+.logo img {
+  width: 150px; /* Logo width */
+  margin: 20px;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px; /* Space between menu items */
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white; /* White text for menu links */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hamburger icon (for mobile view) */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Spacing between bars */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 30px; /* Width of hamburger bars */
+  height: 4px;
+  background-color: white; /* Bar color */
+  border-radius: 2px; /* Rounded bars */
+}
+
+.F_TitleName h1 {
+  color: white;
+  font-size: 48px; /* Large font size for title */
+  margin-top: 100px; /* Space from the top */
+}
+
+/* Food Cards container */
+.food-container {
+  padding: 40px 20px; /* Padding for the container */
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* List of food cards */
+.food-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Each individual food card */
+.food-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between image and text */
+  background-color: white;
+  width: 95%; /* Increased card width */
+  max-width: 1000px; /* Max width for cards */
+  margin: 40px 0; /* Increased space between cards */
+  border-radius: 15px; /* Rounded corners for cards */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Deep shadow effect */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  height: 500px; /* Increased height of cards */
+}
+
+.food-card:hover {
+  transform: translateY(-20px); /* Slight hover lift effect */
+}
+
+/* Left-aligned card */
+.food-card.left {
+  flex-direction: row;
+}
+
+/* Right-aligned card */
+.food-card.right {
+  flex-direction: row-reverse;
+}
+
+/* Container for images inside cards */
+.food-image-container {
+  width: 50%; /* Half of the card width for images */
+  height: 100%; /* Full height of the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding around the image */
+}
+
+/* Image styles */
+.food-image {
+  width: 80%; /* Image takes 80% of container width */
+  height: 80%; /* Image height adjusted to fit container */
+  object-fit: contain; /* Preserve aspect ratio */
+  border-radius: 15px; /* Rounded corners for images */
+}
+
+/* Food text container */
+.food-text {
+  padding: 40px; /* Increased padding around text */
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Take remaining space */
+  height: 100%; /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text */
+}
+
+/* Heading style for food item names */
+.food-text h2 {
+  font-size: 36px; /* Larger font size */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+/* Description style */
+.food-text p {
+  font-size: 22px; /* Larger font size for description */
+  color: #555; /* Darker text color */
+  margin-bottom: 20px; /* Space below description */
+}
+
+/* Link style (Find Location) */
+.food-text a {
+  color: #007BFF; /* Blue color for links */
+  text-decoration: none; /* No underline */
+  font-size: 18px; /* Slightly larger font size */
+}
+
+.food-text a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Background Sections */
+
+/* Gray Background section */
+.gray-background {
+  background: url('./assets/gray_background_image.jpg') no-repeat center center/cover;
+  padding: 50px 0;
+  background-size: cover; /* Cover the entire section */
+}
+
+/* White Background section */
+.white-background {
+  background: url('./assets/white_background_image.jpg') no-repeat center center/cover;
+  padding: 50px 0;
+  background-size: cover; /* Cover the entire section */
+}
+
+/* Scroll Animation */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px); /* Start off-screen */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1; /* Fade-in effect */
+  transform: translateY(0); /* Move into position */
+}
