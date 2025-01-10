@@ -28,7 +28,7 @@ const About = () => {
                         <li><a href="/header">MAIN</a></li>
                         <li><a href="/about">ABOUT</a></li>
                         <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
-                        <li><a href="/local-taste">LOCAL TASTE</a></li>
+                        <li><a href="/Food">Food</a></li>
                         <li><a href="/hotels">HOTELS</a></li>
                     </ul>
                 </nav>
