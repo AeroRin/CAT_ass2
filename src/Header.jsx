@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import logo from './assets/logo.png';
-import food1 from './assets/food1.jpg';
-import food2 from './assets/food2.jpg';
-import food3 from './assets/food3.jpg';
+import food1 from './assets/hokkienmee.png';
+import food2 from './assets/hokkienmee.png';
+import food3 from './assets/hokkienmee.png';
 import about1 from './assets/about1.jpeg';
 import about2 from './assets/about2.jpg';
 import about3 from './assets/about3.jpg';
@@ -10,6 +10,10 @@ import './Header.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleExploreClick = () => {
+        window.location.href = "/TouristSpot"; // Replace with the actual URL
+      };
     
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -41,6 +45,7 @@ const Header = () => {
                 <h2>WONDERS OF PENANG</h2>
             </div>
         </header>
+
         <section className="content1-section">
             <div className="content1_Wrapper">
                 <div className="box-section">
@@ -87,7 +92,8 @@ const Header = () => {
                 </div>
             </div>
         </section>
-        {/* <section className="content2-section">
+
+        <section className="content2-section">
         <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
                     <input type="radio" name="slider" id="item-2"></input>
@@ -123,7 +129,40 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
+
+        <div className='TSMainBackground'>
+    <section className="TSMaincontainer">
+  <div>
+    <div class="TSMaincontent">
+      <h2>Shopping Mall</h2>
+      <span>I like shopping !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Histotical Place</h2>
+      <span>I super duper like Playing !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Top 3 recommend</h2>
+      <span>Oops ! Where is it !</span>
+    </div>
+  </div>
+  <div>
+    <div class="TSMaincontent">
+      <h2>Night Market</h2>
+      <span>12 AM already? Night Time !</span>
+    </div>
+  </div>
+</section>
+<div className="TSMainInfo">
+        <h1>Explore the Penang with Us!</h1>
+        <button onClick={handleExploreClick}>Explore Now!</button>
+      </div>
+</div>
         </>
     );
 }
