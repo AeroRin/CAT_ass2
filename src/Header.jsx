@@ -7,6 +7,7 @@ import about1 from './assets/about1.jpeg';
 import about2 from './assets/about2.jpg';
 import about3 from './assets/about3.jpg';
 import './Header.css';
+import './Food.css';  // Adjust this path as per your project structure
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Header = () => {
@@ -17,10 +18,23 @@ const Header = () => {
     const handleExploreClick = () => {
         window.location.href = "/TouristSpot"; // Replace with the actual URL
       };
+
+    
     
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     };
+
+    const foodNavigationButton = () => {
+        window.location.href = "/Food"; // Replace with the actual URL
+      };
+
+    
+    
+    const toggleFoodMenu= () => {
+    setIsMenuOpen(!isMenuOpen);
+    };
+    
     return (
         <>
         <header className="header">
@@ -134,27 +148,23 @@ const Header = () => {
             </div>
         </section> */}
 
-    
 
-            <div className="FoodMainBackground">
-        <section className="FoodMainContainer">
-            <div className="FoodMainContent">
-            <h2>Local Taste of Penang</h2>
-            <p>
-                Discover the rich culinary traditions of Penang! 
-                Explore the diverse flavors, local delicacies, and must-try dishes that make Penang a food lover's paradise. 
-                Get ready for a gastronomic adventure that takes you through the island's best-kept secrets and hidden gems.
-            </p>
-            </div>
+<div className="FoodMainBackground">
+  <section className="FoodMainContainer">
+    <div className="FoodMainContent">
+      <h2>Local Taste of Penang</h2>
+      <p>
+        Discover the rich culinary traditions of Penang! Explore the diverse flavors, local delicacies, and must-try dishes that make Penang a food lover's paradise. Get ready for a gastronomic adventure that takes you through the island's best-kept secrets and hidden gems.
+      </p>
+    </div>
 
-            <div className="FoodMainInfo">
-            <h1>Explore the Penang with Us!</h1>
-            <Link to="/local-taste">
-                <button className="FoodNavigateButton">Explore Local Taste</button>
-            </Link>
-            </div>
-        </section>
-        </div>
+    <div className="FoodMainInfo">
+      <h1>Explore Penang with Us!</h1>
+      <button className="foodNavigateButton" onClick={foodNavigationButton}>Explore Local Taste</button>
+    </div>
+  </section>
+</div>
+
 
 
         <div className='TSMainBackground'>
