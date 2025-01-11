@@ -219,14 +219,14 @@ const Food = () => {
             ))}
           </div>
       </div>
-      <div class="bottom-text-container">
-        <div class="text-group">
-          <div class="bottom-text-1">Explore the Local Taste</div>
-          <div class="bottom-text-2">Experience the unique flavors of Penang’s culinary delights.</div>
+      <div className="bottom-text-container">
+        <div className="text-group">
+          <div className="bottom-text-1">Explore the Local Taste</div>
+          <div className="bottom-text-2">Experience the unique flavors of Penang’s culinary delights.</div>
         </div>
-        <div class="text-group">
-          <div class="bottom-text-3">A Taste of Tradition</div>
-          <div class="bottom-text-4">Discover the stories behind each dish and its rich heritage.</div>
+        <div className="text-group">
+          <div className="bottom-text-3">A Taste of Tradition</div>
+          <div className="bottom-text-4">Discover the stories behind each dish and its rich heritage.</div>
         </div>
       </div>
 
