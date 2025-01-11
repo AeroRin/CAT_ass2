@@ -7,6 +7,7 @@ import about1 from './assets/about1.jpeg';
 import about2 from './assets/about2.jpg';
 import about3 from './assets/about3.jpg';
 import './Header.css';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,6 +89,7 @@ const Header = () => {
             </div>
         </section>
 
+        /***************************************************************************************************** */
         <section className="content2-section">
         <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
@@ -125,6 +127,29 @@ const Header = () => {
                 </div>
             </div>
         </section>
+        /******************************************************************************************************************/
+
+            <div className="FoodMainBackground">
+        <section className="FoodMainContainer">
+            <div className="FoodMainContent">
+            <h2>Local Taste of Penang</h2>
+            <p>
+                Discover the rich culinary traditions of Penang! 
+                Explore the diverse flavors, local delicacies, and must-try dishes that make Penang a food lover's paradise. 
+                Get ready for a gastronomic adventure that takes you through the island's best-kept secrets and hidden gems.
+            </p>
+            </div>
+
+            <div className="FoodMainInfo">
+            <h1>Explore the Penang with Us!</h1>
+            <Link to="/local-taste">
+                <button className="FoodNavigateButton">Explore Local Taste</button>
+            </Link>
+            </div>
+        </section>
+        </div>
+
+
 
         <div className='TSMainBackground'>
     <section className="TSMaincontainer">

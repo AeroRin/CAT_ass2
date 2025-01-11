@@ -762,7 +762,121 @@ figure.snip0016:hover figcaption::before {
   }
 
 
+  
 
+/* Main background container for the section */
+.FoodMainBackground {
+  background-image: url('./assets/tablefood.png'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Main container section */
+.FoodMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
 
+/* Main content area styling */
+.FoodMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.FoodMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.FoodMainContent p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.FoodMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Explore button container */
+.FoodMainInfo {
+  margin-top: 20px;
+}
+
+.FoodMainInfo h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling for the explore button */
+.FoodNavigateButton {
+  font-size: 1.4rem;
+  padding: 20px 40px;
+  background-color: #ff7f50; /* Customize with your preferred color */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.FoodNavigateButton:hover {
+  background-color: #ff4500;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add animation to the button */
+.FoodNavigateButton:active {
+  transform: translateY(2px);
+}
+
+/* Adding a subtle background overlay to enhance text visibility */
+.FoodMainBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
