@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import logo from './assets/logo.png';
-import food1 from './assets/food1.jpg';
-import food2 from './assets/food2.jpg';
-import food3 from './assets/food3.jpg';
+import food1 from './assets/hokkienmee.png';
+import food2 from './assets/hokkienmee.png';
+import food3 from './assets/hokkienmee.png';
 import about1 from './assets/about1.jpeg';
 import about2 from './assets/about2.jpg';
 import about3 from './assets/about3.jpg';

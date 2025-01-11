@@ -3,70 +3,117 @@ import logo from './assets/logo.png';
 import './Food.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import nightMarket from "./assets/nightmarketbg.png";
+import kopitiamCrowd from "./assets/kopitiamcrowdbg.png";
+import charKueyTeow from "./assets/charkueyteow.jpg";
+import hokkienMee from "./assets/hokkienmee.png";
+import asamLaksa from "./assets/laksa.jpg";
+import oysterOmelette from "./assets/oysterOmelette.png";
+import wanTanMee from "./assets/wantanmee.png";
+import cendol from "./assets/cendol.jpg";
 
 const Food = () => {
-  // State hook to track the open/closed status of the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the visibility of the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Initialize AOS (Animate On Scroll) with a duration of 1000ms
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+        duration: 1000, // Adjust timing
+        offset: 120,    // Adjust scroll offset
+        easing: 'ease-in-out', // Smooth easing
+    });
   }, []);
 
-  // Array of food items with details like name, description, location, and image
+
   const foodItems = [
     {
       name: 'Char Kuey Teow',
-      description: 'A flavorful stir-fried noodle dish with prawns, eggs, and bean sprouts.',
-      location: 'https://www.google.com/maps?q=Char+Kuey+Teow+Penang',
-      image: 'images/char_kuey_teow.jpg',
+      description: 'A flavorful stir-fried noodle dish with prawns, eggs, bean sprouts, and Chinese chives.',
+      famousLocations: [
+        {
+          name: 'Penang Road Char Kuey Teow',
+          address: 'Penang Road, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Penang+Road+Char+Kuey+Teow+Penang'
+        },
+        {
+          name: 'Siam Road Char Kuey Teow',
+          address: 'Siam Road, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Siam+Road+Char+Kuey+Teow+Penang'
+        }
+      ],
+      image: charKueyTeow,
     },
     {
       name: 'Hokkien Mee',
-      description: 'Prawn noodle soup with a spicy and savory broth.',
-      location: 'https://www.google.com/maps?q=Hokkien+Mee+Penang',
-      image: 'images/hokkien_mee.jpg',
+      description: 'Prawn noodle soup with a spicy and savory broth, served with prawns, pork, egg, and bean sprouts.',
+      famousLocations: [
+        {
+          name: 'Kim’s Hokkien Mee',
+          address: 'Lorong Selamat, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Kim%E2%80%99s+Hokkien+Mee+Penang'
+        }
+      ],
+      image: hokkienMee,
     },
     {
-      name: 'Assam Laksa',
-      description: 'A tangy fish-based noodle soup with fresh vegetables.',
-      location: 'https://www.google.com/maps?q=Assam+Laksa+Penang',
-      image: 'images/assam_laksa.jpg',
+      name: 'Asam Laksa',
+      description: 'A tangy fish-based noodle soup with mackerel, tamarind, and fresh vegetables.',
+      famousLocations: [
+        {
+          name: 'Air Itam Asam Laksa',
+          address: 'Air Itam, Penang',
+          locationLink: 'https://www.google.com/maps?q=Air+Itam+Asam+Laksa+Penang'
+        }
+      ],
+      image: asamLaksa,
     },
     {
       name: 'Oyster Omelette',
-      description: 'A savory omelette made with oysters and starch.',
-      location: 'https://www.google.com/maps?q=Oyster+Omelette+Penang',
-      image: 'images/oyster_omelette.jpg',
+      description: 'A savory omelette made with oysters, starch, and eggs, fried to perfection.',
+      famousLocations: [
+        {
+          name: 'Kek Seng Restaurant',
+          address: 'Chulia Street, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Kek+Seng+Restaurant+Penang'
+        }
+      ],
+      image: oysterOmelette,
     },
     {
       name: 'Wantan Mee',
-      description: 'Noodles served with dumplings in a savory broth.',
-      location: 'https://www.google.com/maps?q=Wantan+Mee+Penang',
-      image: 'images/wantan_mee.jpg',
+      description: 'Noodles served with dumplings filled with seasoned pork or shrimp, in a savory broth.',
+      famousLocations: [
+        {
+          name: 'Chung Ling Wantan Mee',
+          address: 'Chung Ling Road, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Chung+Ling+Wantan+Mee+Penang'
+        }
+      ],
+      image: wanTanMee,
     },
     {
       name: 'Cendol',
-      description: 'A sweet dessert made with shaved ice, coconut milk, and palm sugar.',
-      location: 'https://www.google.com/maps?q=Cendol+Penang',
-      image: 'images/cendol.jpg',
-    },
-  ];
+      description: 'A sweet dessert made with shaved ice, coconut milk, palm sugar, and green rice flour jelly.',
+      famousLocations: [
+        {
+          name: 'Penang Road Cendol',
+          address: 'Penang Road, George Town, Penang',
+          locationLink: 'https://www.google.com/maps?q=Penang+Road+Cendol+Penang'
+        }
+      ],
+      image: cendol,
+    }
+  ];  
 
-  // Ref to store references for each food card to track visibility
   const cardRefs = useRef([]);
 
-  // Intersection Observer setup to animate food cards when they come into view while scrolling
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // Add or remove animation class based on visibility of the card
           if (entry.isIntersecting) {
             entry.target.classList.add('aos-animate');
           } else {
@@ -74,15 +121,10 @@ const Food = () => {
           }
         });
       },
-      {
-        threshold: 0.5, // Trigger animation when 50% of the card is visible
-      }
+      { threshold: 0.5 }
     );
 
-    // Start observing each food card for visibility changes
     cardRefs.current.forEach((card) => observer.observe(card));
-
-    // Cleanup the observer when the component is unmounted
     return () => {
       cardRefs.current.forEach((card) => observer.unobserve(card));
     };
@@ -91,15 +133,10 @@ const Food = () => {
   return (
     <>
       <header className="Food">
-        {/* Overlay effect for the header */}
         <div className="overlay-box"></div>
-        
-        {/* Logo section */}
         <div className="logo">
           <img src={logo} alt="Penang Logo" />
         </div>
-        
-        {/* Mobile navigation menu */}
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="/header">MAIN</a></li>
@@ -109,52 +146,54 @@ const Food = () => {
             <li><a href="/hotels">HOTELS</a></li>
           </ul>
         </nav>
-        
-        {/* Hamburger button for mobile menu toggle */}
         <button className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
-
-        {/* Overlay effect for mobile menu */}
         <div className="overlay-boxA"></div>
-
-        {/* Title for the food and beverages section */}
         <div className="F_TitleName">
-          <h1>Food and Beverages</h1>
+        <h1>Local Taste</h1>
         </div>
       </header>
 
-      {/* Food items display container */}
       <div className="food-container">
         <div className="food-list">
-          {/* Map over each food item and display it */}
           {foodItems.map((food, index) => (
             <div
-              className={`food-card ${index % 2 === 0 ? 'left' : 'right'}`} // Alternate card position (left or right)
-              ref={(el) => (cardRefs.current[index] = el)} // Assign a reference to each card for visibility tracking
+              className={`food-card ${index % 2 === 0 ? 'left' : 'right'}`}
+              ref={(el) => (cardRefs.current[index] = el)}
               key={index}
-              data-aos="fade-up" // AOS animation effect
+              data-aos="fade-up"
             >
               <div className="food-image-container">
-                {/* Display food image */}
                 <img src={food.image} alt={food.name} className="food-image" />
               </div>
               <div className="food-text">
-                {/* Display food name */}
                 <h2>{food.name}</h2>
-                {/* Display food description */}
                 <p>{food.description}</p>
-                {/* Link to the location of the food on Google Maps */}
-                <a href={food.location} target="_blank" rel="noopener noreferrer">
-                  Find Location
-                </a>
+                {food.famousLocations.map((location, locIndex) => (
+                <div key={locIndex}>
+                <p>{location.name} {location.address}</p>
+                <a href={location.locationLink} target="_blank" rel="noopener noreferrer">Find Location</a>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+      ))}
         </div>
       </div>
+      <div class="bottom-text-container">
+        <div class="text-group">
+          <div class="bottom-text-1">Explore the Local Taste</div>
+          <div class="bottom-text-2">Experience the unique flavors of Penang’s culinary delights.</div>
+        </div>
+        <div class="text-group">
+          <div class="bottom-text-3">A Taste of Tradition</div>
+          <div class="bottom-text-4">Discover the stories behind each dish and its rich heritage.</div>
+        </div>
+      </div>
+
     </>
   );
 };

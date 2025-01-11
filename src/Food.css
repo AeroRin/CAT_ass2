@@ -1,16 +1,43 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Bebas Neue', serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .Food {
-  position: relative;
-  height: 100vh; /* Full height of the viewport */
-  background: url('../images/penang_banner.jpg') no-repeat center center/cover; /* Penang banner background */
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('./assets/nightmarketbg.png') center center/cover no-repeat;
+  height: 160vh; /* Height of the section */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  object-fit: contain;
   text-align: center;
+  box-sizing: border-box;
+  padding-top: 3vh;
+  position: relative; /* Ensure absolute positioning for the title */
+}
+
+/* Title centering */
+.F_TitleName {
+  position: absolute;
+  top: 50%; /* Vertically center the title */
+  left: 50%; /* Horizontally center the title */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  text-align: center;
+  width: 100%;
+}
+
+.F_TitleName h1 {
+  font-size: 10vw; /* Responsive font size */
+  color: white;
+  margin: 0;
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
 }
 
 .logo img {
@@ -55,18 +82,45 @@ body {
   height: 4px;
   background-color: white; /* Bar color */
   border-radius: 2px; /* Rounded bars */
+} 
+
+.F_TitleName {
+  position: absolute; /* Position it absolutely */
+  top: 150px; /* Increase this value to move the title lower */
+  left: 50%;
+  transform: translateX(-50%); /* Center the title horizontally */
+  text-align: center; /* Center the title text */
+  width: 100%; /* Take full width of the viewport */
 }
 
 .F_TitleName h1 {
+  font-size: 10vw; /* Make title size responsive and as large as possible */
   color: white;
-  font-size: 48px; /* Large font size for title */
-  margin-top: 100px; /* Space from the top */
+  margin: 0; /* Remove any default margin */
+  font-weight: bold; /* Optional: Makes title bold */
 }
 
 /* Food Cards container */
+/* Food Cards container */
+/* Food Cards container */
 .food-container {
-  padding: 40px 20px; /* Padding for the container */
-  background-color: #f9f9f9; /* Light gray background */
+  background-image: url('./assets/kopitiamcrowdbg.png'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 50px 0; /* Adjust padding to create space around the cards */
+  position: relative; /* Position relative for overlay */
+}
+
+.food-container::before {
+  content: ''; /* Empty content for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white overlay */
+  z-index: 1; /* Position overlay above the background but behind the cards */
 }
 
 /* List of food cards */
@@ -74,115 +128,125 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; /* Ensure cards are above the overlay */
+  z-index: 2;
 }
 
 /* Each individual food card */
 .food-card {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; /* Space between image and text */
   background-color: white;
-  width: 95%; /* Increased card width */
-  max-width: 1000px; /* Max width for cards */
-  margin: 40px 0; /* Increased space between cards */
-  border-radius: 15px; /* Rounded corners for cards */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Deep shadow effect */
-  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
-  height: 500px; /* Increased height of cards */
+  border-radius: 15px;
+  width: 95%;
+  max-width: 1000px;
+  height: 400px; /* Adjust height for a balanced look */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  position: relative; /* Ensure cards appear above the overlay */
 }
 
 .food-card:hover {
-  transform: translateY(-20px); /* Slight hover lift effect */
+  transform: translateY(-20px);
 }
 
-/* Left-aligned card */
 .food-card.left {
   flex-direction: row;
 }
 
-/* Right-aligned card */
 .food-card.right {
   flex-direction: row-reverse;
 }
 
-/* Container for images inside cards */
 .food-image-container {
-  width: 50%; /* Half of the card width for images */
-  height: 100%; /* Full height of the card */
+  width: 50%; /* Take up half the card's width */
+  height: 90%; /* Slight padding from top and bottom */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Added padding around the image */
+  padding: 10px; /* Add padding inside the container */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+  border-radius: 15px; /* Match the card's border-radius */
+  background-color: #f5f5f5; /* Optional: Light background to separate the image */
+  overflow: hidden; /* Ensure no overflow for large images */
 }
 
-/* Image styles */
 .food-image {
-  width: 80%; /* Image takes 80% of container width */
-  height: 80%; /* Image height adjusted to fit container */
-  object-fit: contain; /* Preserve aspect ratio */
-  border-radius: 15px; /* Rounded corners for images */
+  width: 100%; /* Adjust to fit within the container */
+  height: 100%; /* Maintain aspect ratio within the container */
+  object-fit: cover; /* Crop to fit the dimensions */
+  border-radius: 15px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-/* Food text container */
 .food-text {
-  padding: 40px; /* Increased padding around text */
-  text-align: left; /* Align text to the left */
-  flex: 1; /* Take remaining space */
-  height: 100%; /* Full height */
+  padding: 40px;
+  text-align: left;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center text */
+  justify-content: center;
 }
 
-/* Heading style for food item names */
 .food-text h2 {
-  font-size: 36px; /* Larger font size */
-  font-weight: bold; /* Bold heading */
-  margin-bottom: 20px; /* Space below heading */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Description style */
 .food-text p {
-  font-size: 22px; /* Larger font size for description */
-  color: #555; /* Darker text color */
-  margin-bottom: 20px; /* Space below description */
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-/* Link style (Find Location) */
 .food-text a {
-  color: #007BFF; /* Blue color for links */
-  text-decoration: none; /* No underline */
-  font-size: 18px; /* Slightly larger font size */
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .food-text a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
-/* Background Sections */
-
-/* Gray Background section */
-.gray-background {
-  background: url('./assets/gray_background_image.jpg') no-repeat center center/cover;
-  padding: 50px 0;
-  background-size: cover; /* Cover the entire section */
+/* Overall container for the bottom text */
+.bottom-text-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  z-index: 10;
+  font-family: 'Arial', sans-serif; /* Modern font family */
 }
 
-/* White Background section */
-.white-background {
-  background: url('./assets/white_background_image.jpg') no-repeat center center/cover;
-  padding: 50px 0;
-  background-size: cover; /* Cover the entire section */
+.text-group {
+  margin-bottom: 20px; /* Adds space between the two groups of text */
 }
 
-/* Scroll Animation */
-[data-aos] {
-  opacity: 0;
-  transform: translateY(50px); /* Start off-screen */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+/* Common styling for all text elements */
+.bottom-text-1, .bottom-text-2, .bottom-text-3, .bottom-text-4 {
+  line-height: 1.6; /* Spacing between lines for better readability */
+  letter-spacing: 0.5px; /* Adds a slight spacing between letters */
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-[data-aos].aos-animate {
-  opacity: 1; /* Fade-in effect */
-  transform: translateY(0); /* Move into position */
+/* Styling for odd-numbered lines (larger, bold text) */
+.bottom-text-1, .bottom-text-3 {
+  font-weight: bold;
+  font-size: 2.5rem; /* Larger font size */
+  color: #333; /* Dark gray color for a softer tone */
+  margin-bottom: 15px; /* Space between lines */
 }
+
+/* Styling for even-numbered lines (smaller text) */
+.bottom-text-2, .bottom-text-4 {
+  font-size: 1.6rem; /* Smaller font size */
+  color: #666; /* Lighter gray color for contrast */
+  margin-bottom: 15px; /* Space between lines */
+}
+
+
