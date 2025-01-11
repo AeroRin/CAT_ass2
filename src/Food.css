@@ -1,5 +1,276 @@
-.F_TitleName{
-  
-  font-size : 70px ;
-
+/* General Styles */
+body {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+.Food {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('./assets/nightmarketbg.png') center center/cover no-repeat;
+  height: 160vh; /* Height of the section */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 3vh;
+  position: relative; /* Ensure absolute positioning for the title */
+}
+
+/* Title centering */
+.F_TitleName {
+  position: absolute;
+  margin-top: -100px;
+  top: 50%; /* Vertically center the title */
+  left: 50%; /* Horizontally center the title */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  text-align: center;
+  width: 100%;
+}
+
+.F_TitleName h1 {
+  font-size: 5rem; /* Responsive font size */
+  color: white;
+  margin: 0 ;
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
+  font-weight: bold; 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+.logo img {
+  width: 150px; /* Logo width */
+  margin: 20px;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px; /* Space between menu items */
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white; /* White text for menu links */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hamburger icon (for mobile view) */
+.Fhamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Spacing between bars */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Fhamburger .bar {
+  width: 30px; /* Width of hamburger bars */
+  height: 4px;
+  background-color: white; /* Bar color */
+  border-radius: 2px; /* Rounded bars */
+} 
+
+.F_TitleName {
+  position: absolute; /* Allows precise positioning */
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust for true centering */
+  font-size: 4rem; /* Make the text larger */
+  color: #ffffff; /* Ensure good contrast against the background */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
+  font-family: 'Bebas Neue', sans-serif; /* Ensure consistent font style */
+  text-align: center; /* Center align the text */
+  z-index: 10; /* Ensure it appears above the background image */
+}
+
+.F_TitleName h1 {
+  font-size: 10vw; /* Make title size responsive and as large as possible */
+  color: white;
+  margin: 0; /* Remove any default margin */
+  font-weight: bold; /* Optional: Makes title bold */
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Food Cards container */
+.food-container {
+  background-image: url('./assets/kopitiamcrowdbg.png'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 50px 0; /* Adjust padding to create space around the cards */
+  position: relative; /* Position relative for overlay */
+}
+
+.food-container::before {
+  content: ''; /* Empty content for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
+  z-index: 1; /* Position overlay above the background but behind the cards */
+}
+
+/* List of food cards */
+.food-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Ensure cards are above the overlay */
+  z-index: 2;
+}
+
+/* Each individual food card */
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  max-width: 1000px;
+  height: 400px; /* Adjust height for a balanced look */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  position: relative; /* Ensure cards appear above the overlay */
+}
+
+.food-card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-15px);
+  transition: all 0.3s ease-in-out;
+}
+
+.food-card.left {
+  flex-direction: row;
+}
+
+.food-card.right {
+  flex-direction: row-reverse;
+}
+
+.food-image-container {
+  width: 50%; /* Take up half the card's width */
+  height: 90%; /* Slight padding from top and bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add padding inside the container */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+  border-radius: 15px; /* Match the card's border-radius */
+  background-color: #f5f5f5; /* Optional: Light background to separate the image */
+  overflow: hidden; /* Ensure no overflow for large images */
+}
+
+@media (max-width: 768px) {
+  .food-card {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .food-image-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.food-image {
+  width: 100%; /* Adjust to fit within the container */
+  height: 100%; /* Maintain aspect ratio within the container */
+  object-fit: cover; /* Crop to fit the dimensions */
+  border-radius: 15px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.food-text {
+  padding: 40px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.food-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.food-text p {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.food-text a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.food-text a:hover {
+  text-decoration: underline;
+}
+
+/* Overall container for the bottom text */
+.bottom-text-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: black;
+  z-index: 10;
+  font-family: 'Great Vibes', cursive, sans-serif; /* Cursive font family with fallback */
+}
+
+.text-group {
+  margin-bottom: 20px; /* Adds space between the two groups of text */
+}
+
+/* Common styling for all text elements */
+.bottom-text-1, .bottom-text-2, .bottom-text-3, .bottom-text-4 {
+  line-height: 1.6; /* Spacing between lines for better readability */
+  letter-spacing: 0.5px; /* Adds a slight spacing between letters */
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Styling for odd-numbered lines (larger, bold text) */
+.bottom-text-1, .bottom-text-3 {
+  font-weight: bold;
+  font-size: 2.5rem; /* Larger font size */
+  color: #333; /* Dark gray color for a softer tone */
+  margin-bottom: 15px; /* Space between lines */
+}
+
+/* Styling for even-numbered lines (smaller text) */
+.bottom-text-2, .bottom-text-4 {
+  font-size: 1.6rem; /* Smaller font size */
+  color: #666; /* Lighter gray color for contrast */
+  margin-bottom: 15px; /* Space between lines */
+}
+
+

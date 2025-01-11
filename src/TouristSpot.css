@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     background: url('./assets/penangbridge.jpg') center center/cover no-repeat; /* Background image */
-    opacity: 0.3; /* 40% opacity */
+    opacity: 0.1; /* 40% opacity */
     z-index: -1; /* Ensure it is behind the content */
 }
 
@@ -276,6 +276,7 @@ section {
 
 
 .box-name {
+    font-family: "Merriweather", serif;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 5px;
@@ -291,6 +292,7 @@ section {
 .box-hours {
     text-align: left; /* Ensure individual text elements are aligned left */
     margin-bottom: 10px; /* Add spacing between elements */
+    font-family: "Merriweather", serif;
 }
 
 .box-image {
@@ -359,6 +361,12 @@ section {
         height: auto; /* Maintain aspect ratio */
         object-fit: cover; /* Ensure the image covers the area */
     }
+
+    .TS-title {
+        font-size: 8rem; /* Adjust to your desired smaller size */
+        text-align: center; /* Center the text horizontally */
+        margin: 0 auto; /* Center the title block */
+      }
 }
     
     .floating-icon {

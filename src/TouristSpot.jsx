@@ -142,7 +142,7 @@ const TS = () => {
     {
       title: "Top 3 Recommendation",
       name: "Escape Park",
-      description: "ESCAPE Penang is a must-visit destination with family and friends when you are in Penang! Try out over 35 thrilling activities such as zip lines, water slides, obstacle courses, and more exciting games here. ESCAPE Penang holds a Guinness World Record of having the Longest Tube Water Slide and the Longest Zip Coaster in the world. Introducing Ski Slope at ESCAPE Penang, the first in Malaysia within a unique tropical setting. You can also enjoy Dead Sea Pool experience to have the experience of natural floatation in the water.",
+      description: "ESCAPE Penang is a must-visit destination with family and friends when you are in Penang! Try out over 35 thrilling activities such as zip lines, water slides, obstacle courses, and more exciting games here. ESCAPE Penang holds a Guinness World Record of having the Longest Tube Water Slide and the Longest Zip Coaster in the world. Introducing Ski Slope at ESCAPE Penang, the first in Malaysia within a unique tropical setting.",
       address: "828, Jalan Teluk Bahang, Teluk Bahang, 11050 Tanjung Bungah, Pulau Pinang",
       hours: "10:00 AM - 06:00 PM",
       image: Escape,
@@ -197,16 +197,16 @@ const TS = () => {
     <section id ='main'>
       <header className="TouristSpot">
         <div className="overlay-box"></div>
-        <div className="logo">
+        <div className="logo_a">
           <img src={logo} alt="Penang Logo" />
         </div>
         <nav className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <ul>
-            <li><a href="header">MAIN</a></li>
-            <li><a href="about">ABOUT</a></li>
-            <li><a href="TouristSpot">TOURIST SPOTS</a></li>
-            <li><a href="Food">LOCAL TASTE</a></li>
-            <li><a href="hotels">HOTELS</a></li>
+            <li><a href="/header">MAIN</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
+            <li><a href="/Food">LOCAL TASTE</a></li>
+            <li><a href="/hotels">HOTELS</a></li>
           </ul>
         </nav>
         <button className="TShamburger" onClick={toggleMenu}>
@@ -326,6 +326,7 @@ const TS = () => {
           </div>
         )}
       </div>
+      
       
     </>
   );
