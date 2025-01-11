@@ -71,7 +71,7 @@ nav {
   user-select: none;
   position: absolute;
   top: 23px;
-  left: 270px;
+  left:18%;
   display: flex;
   align-items: center;
   margin-left: 70px;
@@ -124,7 +124,7 @@ nav ul li a:hover {
   position: absolute;
   top: 10px; /* Align with the top of the screen or overlay box */
   right: 25px; /* Adjust spacing from the right edge */
-  height: 7%; /* Match the height of the overlay box */
+  height: 9%; /* Match the height of the overlay box */
   flex-direction: column;
   justify-content: center; /* Center bars vertically */
   gap: 7px;
@@ -137,9 +137,10 @@ nav ul li a:hover {
 
 .hamburger .bar {
   width:35px;
-  height: 6px;
+  height: 8px;
   background-color: rgba(255, 255, 255, 0.799);
   border-radius: 2px;
+  z-index: 100;
   transition: all 0.3s ease;
 }
 

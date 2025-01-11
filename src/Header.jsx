@@ -24,11 +24,11 @@ const Header = () => {
             </div>
             <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#main">MAIN</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#tourist-spots">TOURIST SPOTS</a></li>
-                    <li><a href="#local-taste">LOCAL TASTE</a></li>
-                    <li><a href="#hotels">HOTELS</a></li>
+                    <li><a href="header">MAIN</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="TouristSpot">TOURIST SPOTS</a></li>
+                    <li><a href="LocalTaste">LOCAL TASTE</a></li>
+                    <li><a href="hotels">HOTELS</a></li>
                 </ul>
             </nav>
             <button className="hamburger" onClick={toggleMenu}>
