@@ -91,6 +91,8 @@
     color: #555;
 }
 
+
+
 nav {
   user-select: none;
   position: absolute;
@@ -807,7 +809,7 @@ img {
     }
     &:nth-of-type(3) {
       background: url("./assets/Top3Main2.jpg")
-        no-repeat 50% / cover;
+        no-repeat 30% / cover;
     }
     &:nth-of-type(4) {
       background: url("./assets/NMMain2.jpg")
@@ -949,6 +951,27 @@ img {
         padding: 15px 100px; /* Bigger padding for button */
         font-size: 1.25rem; /* Larger font size for button text */
       }
+  }
+
+  @media screen and (max-width: 768px) {
+    .TSMaincontainer > div {
+      flex: 0 0 90px; /* Reduce the width of the container */
+    }
+  
+    .TSMaincontainer > div:hover {
+      flex: 0 0 150px; /* Adjust the hover effect width for smaller screens */
+    }
+  
+    .TSMaincontent span {
+      margin-top: 200px; /* Reduce the margin to bring it closer */
+      font-size: 0.8rem; /* Reduce the font size for better readability */
+    }
+  
+    .TSMaincontainer > div .TSMaincontent {
+      padding: 10px; /* Adjust padding for smaller screens */
+      font-size: 1rem; /* Adjust font size */
+      transform: translatey(100%);
+    }
   }
 
 

@@ -9,6 +9,8 @@ import about3 from './assets/about3.jpg';
 import './Header.css';
 
 const Header = () => {
+
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleExploreClick = () => {
