@@ -38,7 +38,7 @@ body {
 }
 
 /* Hamburger icon (for mobile view) */
-.hamburger {
+.Fhamburger {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -50,7 +50,7 @@ body {
   cursor: pointer;
 }
 
-.hamburger .bar {
+.Fhamburger .bar {
   width: 30px; /* Width of hamburger bars */
   height: 4px;
   background-color: white; /* Bar color */

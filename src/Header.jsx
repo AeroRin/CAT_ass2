@@ -22,7 +22,7 @@ const Header = () => {
             <div className="logo">
                 <img src={logo} alt="Penang Logo" />
             </div>
-            <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="/header">MAIN</a></li>
                     <li><a href="/about">ABOUT</a></li>
@@ -38,51 +38,56 @@ const Header = () => {
             </button>
             <div className="H_TitleName">
                 <h1>DISCOVER</h1>
-                <h2>W</h2>
-                <h4>ONDERS OF</h4>
-                <h5>ENANG</h5>
-                <h3>P</h3>
+                <h2>WONDERS OF PENANG</h2>
             </div>
         </header>
         <section className="content1-section">
-            <div className="box-section">
-            </div>
-            <div className="C_TitleName">
-                <h1>A</h1>
-                <h2>BOUT</h2>
-            </div>
-            <div className="line"></div>
-            <div className="C_TitleContent">
-                <p>Penang, is famed for its cultural diversity, heritage sites, and vibrant street food in George Town.</p>
-            </div>
-            <div className="About_Content">
-                <figure className="snip0016">
-                    <img src={about1} alt="sample41" />
-                    <figcaption>
-                        <h2>I think <span>nighttime</span> is dark</h2>
-                        <p>So you can imagine your fears with less distraction.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
-                <figure className="snip0016">
-                    <img src={about2} alt="sample42" />
-                    <figcaption>
-                        <h2>I suppose if we couldn <span>laugh</span></h2>
-                        <p>At things that make sense, we couldn react to a lot of life.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
-                <figure className="snip0016">
-                    <img src={about3} alt="sample43" />
-                    <figcaption>
-                        <h2>I think the <span>surest</span> sign </h2>
-                        <p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
+            <div className="content1_Wrapper">
+                <div className="box-section">
+                    <div className="C_TitleName">
+                        <h1>ABOUT</h1>
+                        <h2>PENANG</h2>
+                    </div>
+                    <div className="line"></div>
+                    <div className="C_TitleContent">
+                        <p>Penang, is famed for its cultural diversity, heritage sites, and vibrant street food in George Town.</p>
+                    </div>
+                    <section className="About_Content">
+                        <article>
+                            <figure className="snip0016">
+                                <img src={about1} alt="sample41" />
+                                <figcaption>
+                                    <h2>I think <span>nighttime</span> is dark</h2>
+                                    <p>So you can imagine your fears with less distraction.</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure className="snip0016">
+                                <img src={about2} alt="sample42" />
+                                <figcaption>
+                                    <h2>I suppose if we couldn <span>laugh</span></h2>
+                                    <p>At things that make sense, we couldn react to a lot of life.</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure className="snip0016">
+                                <img src={about3} alt="sample43" />
+                                <figcaption>
+                                    <h2>I think the <span>surest</span> sign </h2>
+                                    <p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
+                                    <a href="#"></a>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </section>
+                </div>
             </div>
         </section>
-        <section className="content2-section">
+        {/* <section className="content2-section">
         <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
                     <input type="radio" name="slider" id="item-2"></input>
@@ -118,7 +123,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         </>
     );
 }

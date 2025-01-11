@@ -20,7 +20,7 @@ const About = () => {
         <>
             <header className="about">
                 <div className="overlay-box"></div>
-                <div className="logo">
+                <div className="logo_a">
                     <img src={logo} alt="Penang Logo" />
                 </div>
                 <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>

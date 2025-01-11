@@ -111,7 +111,7 @@ const Food = () => {
         </nav>
         
         {/* Hamburger button for mobile menu toggle */}
-        <button className="hamburger" onClick={toggleMenu}>
+        <button className="Fhamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
