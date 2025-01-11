@@ -27,8 +27,21 @@
     align-items: center;
     object-fit: contain;
     box-sizing: border-box;
-    top: 5.4vh;
+    top: 10vh;
 }
+
+@media (max-width: 2560px){
+  .overlay-boxA {
+    top: 3.3vh;
+  }
+}
+
+@media (max-width: 1920px){
+  .overlay-boxA {
+    top: 6.85vh;
+  }
+}
+
 
 .logo_a{
   display: flex;
@@ -136,6 +149,12 @@
     font-weight: 400;
     color: black;
     margin: 0 1rem;
+}
+
+@media (max-width: 2560px){
+  .content1-about h1{
+    font-size: clamp(4rem, 8vw, 12rem);
+  }
 }
 
 .wrapper {
@@ -449,6 +468,42 @@
     z-index: 0;
   }
 
+  @media (max-width: 1920px) {
+    .content1-about .card-info h1{
+      user-select: none;
+      font-family: "Bebas Neue", serif;
+      font-size: clamp(2rem, 4vw, 5rem);
+      font-weight: 400;
+      color: white;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      margin-left: -2rem;
+    }
+    
+    .content1-about p{
+      user-select: none;
+      font-family: "Ysabeau SC", serif;
+      font-size: clamp(1rem, 4vw, 0.8rem);
+      font-weight: 400;
+      color: white;
+      padding: 0rem;
+      margin-top: 0rem;
+    }
+  }
+
+  @media (max-width: 1024px) {      
+    .content1-about p{
+      user-select: none;
+      font-family: "Ysabeau SC", serif;
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
+      font-weight: 400;
+      color: white;
+      padding: 0rem;
+      margin-left: -1vw;
+    }
+  }
+
   .content2-about{
     background: rgba(197, 171, 68, 0.6);
     height: 90vh;
@@ -467,7 +522,6 @@
     flex-wrap: wrap;
     }
 
-
     .content2-about h1{
         user-select: none;
         font-family: "Bebas Neue", serif;
@@ -480,43 +534,30 @@
         margin-left: 8rem;
     }
 
-    @media (max-width: 1920px) {
-      .content1-about .card-info h1{
-        user-select: none;
-        font-family: "Bebas Neue", serif;
-        font-size: clamp(2rem, 4vw, 5rem);
-        font-weight: 400;
-        color: white;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-        margin-left: -2rem;
-      }
-      
-      .content1-about p{
-        user-select: none;
-        font-family: "Ysabeau SC", serif;
-        font-size: clamp(1rem, 4vw, 0.8rem);
-        font-weight: 400;
-        color: white;
-        padding: 0rem;
-        margin-top: 0rem;
+    @media (max-width: 2560px){
+      .content2-about h1{
+        font-size: clamp(2rem, 7vw, 8rem);
       }
     }
 
-    @media (max-width: 1024px) {      
-      .content1-about p{
-        user-select: none;
-        font-family: "Ysabeau SC", serif;
-        font-size: clamp(0.8rem, 2vw, 0.9rem);
-        font-weight: 400;
-        color: white;
-        padding: 0rem;
-        margin-left: -1vw;
+    @media (max-width: 2400px){
+      .content2-about h1{
+        font-size: clamp(2rem, 5vw, 9rem);
+      }
+    }
+
+    @media (max-width: 1920px){
+      .content2-about h1{
+        font-size: clamp(2rem, 5vw, 8rem);
+      }
+    }
+
+    @media (max-width: 1440px){
+      .content2-about h1{
+        font-size: clamp(2rem, 5vw, 7rem);
       }
     }
     
-
     .TravelBox{
         position: relative;
         background:  url('./assets/AboutBackground3.jpeg') center center/cover no-repeat;
@@ -531,6 +572,12 @@
         object-fit: contain;
         box-sizing: border-box;
         margin-top: -7rem;
+    }
+
+    @media (max-width: 2560px){
+      .TravelBox {
+        margin-top: -12rem;
+      }
     }
 
     .TravelText {
@@ -549,6 +596,13 @@
         color: black;
         padding: 0rem;
         margin-top: 0rem;
+    }
+
+    @media (max-width: 2560px){
+
+      .TravelText p{
+        font-size: clamp(1rem, 1.5vw, 3rem);
+      }
     }
 
     @media (max-width: 768px) {
@@ -593,14 +647,9 @@
   padding-right: 2rem;
 }
 
-.Weather_Text h1 {
-  font-size: clamp(3rem, 5vw, 6rem);
-  margin-bottom: 1rem;
-}
-
 .Weather_Text p {
   font-family: "Caveat", serif;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 3rem);
   margin-bottom: 1rem;
 }
 
@@ -622,23 +671,77 @@
 }
 
 .Weather_Image img {
-  width: 80%;
-  max-width: 300px;
   border-radius: 20px;
   object-fit: cover;
 }
 
 .Rainy_Season_Image {
-  width: 80%;
-  max-width: 300px;
+  width: 25vw;
+  height: 30vh;
   border-radius: 20px;
   object-fit: cover;
+  margin-right: 15vw;
 }
 
 .Dry_Season_Image {
-  width: 80%;
-  max-width: 300px;
+  width: 25vw;
+  height: 30vh;
   border-radius: 20px;
   object-fit: cover;
   margin-top: 49vh;
+  margin-right: 15vw;
+}
+
+@media (max-width: 2560px){
+  .Weather_Text h1 {
+    font-size: clamp(9rem, 15vw, 19rem);
+  }
+
+  .Weather_Text p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .Weather_Text h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+  }
+
+  .Weather_Text h3 {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+  }
+}
+
+@media (max-width: 1920px){
+  .Weather_Text h1 {
+    font-size: clamp(6rem, 1vw, 12rem);
+  }
+
+  .Weather_Text p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .Weather_Text h1 {
+    font-size: clamp(3rem, 5vw, 6rem);
+  }
+
+  .Weather_Text h3 {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+  }
+
+  .Rainy_Season_Image {
+    width: 20vw;
+    height: 25vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right: 15vw;
+    margin-top: 10vh;
+  }
+  
+  .Dry_Season_Image {
+    width: 20vw;
+    height: 25vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 49vh;
+    margin-right: 15vw;
+  }
 }
