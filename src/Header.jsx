@@ -43,7 +43,7 @@ const Header = () => {
             <div className="logo">
                 <img src={logo} alt="Penang Logo" />
             </div>
-            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="/header">MAIN</a></li>
                     <li><a href="/about">ABOUT</a></li>
@@ -52,7 +52,7 @@ const Header = () => {
                     <li><a href="/hotels">HOTELS</a></li>
                 </ul>
             </nav>
-            <button className="hamburger" onClick={toggleMenu}>
+            <button className="Mhamburger" onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
@@ -177,13 +177,13 @@ const Header = () => {
   </div>
   <div>
     <div className="TSMaincontent">
-      <h2>Histotical Place</h2>
+      <h2>Historical Locations</h2>
       <span>I super duper like Playing !</span>
     </div>
   </div>
   <div>
     <div className="TSMaincontent">
-      <h2>Top 3 recommend</h2>
+      <h2>Top 3 Attractions</h2>
       <span>Oops ! Where is it !</span>
     </div>
   </div>
@@ -198,6 +198,22 @@ const Header = () => {
         <h1>Explore the Penang with Us!</h1>
         <button onClick={handleExploreClick}>Explore Now!</button>
       </div>
+</div>
+
+<div className="HotelMainBackground">
+  <section className="HotelMainContainer">
+    <div className="HotelMainContent">
+      <h2>Local Taste of Penang</h2>
+      <p>
+        Discover the rich culinary traditions of Penang! Explore the diverse flavors, local delicacies, and must-try dishes that make Penang a food lover's paradise. Get ready for a gastronomic adventure that takes you through the island's best-kept secrets and hidden gems.
+      </p>
+    </div>
+
+    <div className="HotelMainInfo">
+      <h1>The Best Accommodations for You</h1>
+      <button className="HotelNavigateButton" onClick={foodNavigationButton}>Scout Out Hotels Now</button>
+    </div>
+  </section>
 </div>
         </>
     );
