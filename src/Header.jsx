@@ -62,9 +62,9 @@ const Header = () => {
                             <figure className="snip0016">
                                 <img src={about1} alt="sample41" />
                                 <figcaption>
-                                    <h2>I think <span>nighttime</span> is dark</h2>
-                                    <p>So you can imagine your fears with less distraction.</p>
-                                    <a href="#"></a>
+                                    <h2>Do you know <span>History</span> of Penang</h2>
+                                    <p>Penang was once a strategic trading hub and a melting pot of diverse ethnicities and is founded by Francis Light</p>
+                                    <a href="/about"></a>
                                 </figcaption>
                             </figure>
                         </article>
@@ -72,9 +72,9 @@ const Header = () => {
                             <figure className="snip0016">
                                 <img src={about2} alt="sample42" />
                                 <figcaption>
-                                    <h2>I suppose if we couldn <span>laugh</span></h2>
-                                    <p>At things that make sense, we couldn react to a lot of life.</p>
-                                    <a href="#"></a>
+                                    <h2>Worry about your <span>Traveling Plans</span></h2>
+                                    <p>Make sure you gather all your travel requirements to ensure a smooth and enjoyable journey. </p>
+                                    <a href="/about"></a>
                                 </figcaption>
                             </figure>
                         </article>
@@ -82,9 +82,9 @@ const Header = () => {
                             <figure className="snip0016">
                                 <img src={about3} alt="sample43" />
                                 <figcaption>
-                                    <h2>I think the <span>surest</span> sign </h2>
-                                    <p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-                                    <a href="#"></a>
+                                    <h2>Learn more about the<span> Weather</span> of Penang </h2>
+                                    <p>Penang has a tropical climate, with warm temperatures and high humidity throughout the year.</p>
+                                    <a href="/about"></a>
                                 </figcaption>
                             </figure>
                         </article>
