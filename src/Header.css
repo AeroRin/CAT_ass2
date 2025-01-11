@@ -998,7 +998,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
   box-sizing: border-box;
   width: 100%;
   max-width: 1200px; /* Optional, to limit width */
@@ -1009,8 +1009,8 @@ img {
 /* Main content area styling */
 .FoodMainContent {
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
-  padding: 50px;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom:  10px;
   border-radius: 10px;
   box-sizing: border-box;
   width: 100%;
@@ -1029,9 +1029,9 @@ img {
 }
 
 .FoodMainContent p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: #f0f0f0;
   font-style: italic;
 }
@@ -1048,7 +1048,7 @@ img {
 }
 
 .FoodMainInfo h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1057,39 +1057,53 @@ img {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
-/* Styling for the explore button */
-.FoodNavigateButton {
+.foodNavigateButton {
   font-size: 1.4rem;
-  padding: 20px 40px;
-  background-color: #ff7f50; /* Customize with your preferred color */
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff7f50, #ff4500); /* Gradient background */
   border: none;
   border-radius: 50px;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
 }
 
-.FoodNavigateButton:hover {
-  background-color: #ff4500;
+.foodNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foodNavigateButton:hover {
+  background: linear-gradient(45deg, #ff4500, #ff7f50); /* Reverse gradient on hover */
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Add animation to the button */
-.FoodNavigateButton:active {
+.foodNavigateButton:active {
   transform: translateY(2px);
 }
 
-/* Adding a subtle background overlay to enhance text visibility */
-.FoodMainBackground::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-  z-index: 1;
+.foodNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
 }
+
+.foodNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}
+
