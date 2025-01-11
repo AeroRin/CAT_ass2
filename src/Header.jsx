@@ -133,6 +133,8 @@ const Header = () => {
                 </div>
             </div>
         </section> */}
+=========
+    
         /******************************************************************************************************************/
 
             <div className="FoodMainBackground">
@@ -156,6 +158,7 @@ const Header = () => {
         </div>
 
 
+>>>>>>>>> Temporary merge branch 2
 
         <div className='TSMainBackground'>
     <section className="TSMaincontainer">
