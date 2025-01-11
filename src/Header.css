@@ -305,50 +305,44 @@ nav ul li a:hover {
     left: 31vw;
 }
 
-@media (max-width: 1920px){
+@media (max-width: 1145px){
   .H_TitleName h1{
-    font-size: clamp(2rem, 7vw, 9rem);
-    left: 48vw;
+    font-size: clamp(3rem, 7vw, 10rem);
+    top: -13vh;
+    left: 54vw;
   }
   .H_TitleName h2{
-    font-size: clamp(2rem, 5vw, 7rem);
-    left: 31vw;
+    font-size: clamp(2rem, 6vw, 9rem);
+    top: -20vh;
+    left: 26vw;
   }
 }
 
-@media (max-width: 1715px){
+@media (max-width: 781px){
   .H_TitleName h1{
-    font-size: clamp(2rem, 7vw, 9rem);
-    left: 48vw;
+    font-size: clamp(3rem, 7vw, 10rem);
+    top: -18vh;
+    left: 54vw;
   }
   .H_TitleName h2{
-    font-size: clamp(2rem, 5vw, 7rem);
-    left: 31vw;
+    font-size: clamp(2rem, 6vw, 9rem);
+    top: -23vh;
+    left: 26vw;
   }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 681px){
   .H_TitleName h1{
-    font-size: clamp(2rem, 7vw, 9rem);
-    left: 48vw;
+    font-size: clamp(1rem, 7vw, 10rem);
+    top: -18vh;
+    left: 54vw;
   }
   .H_TitleName h2{
-    font-size: clamp(2rem, 5vw, 7rem);
-    left: 31vw;
+    font-size: clamp(1rem, 6vw, 9rem);
+    top: -23vh;
+    left: 26vw;
   }
 }
-
-@media (max-width: 1279px){
-  .H_TitleName h1{
-    font-size: clamp(2rem, 7vw, 9rem);
-    left: 48vw;
-  }
-  .H_TitleName h2{
-    font-size: clamp(2rem, 5vw, 7rem);
-    left: 31vw;
-  }
-}
-
 .content1_Wrapper{
   display: flex;
   flex-direction: column;  
@@ -361,6 +355,15 @@ nav ul li a:hover {
     width: 152%;
     height: 200vh;
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+}
+
+@media (max-width: 1920px){
+  .box-section{
+    margin-top: -35vh;
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+  }
 }
 
 .C_TitleName h1{
@@ -401,6 +404,110 @@ nav ul li a:hover {
     position: relative;
     top: 0vh;
     left: 17vw;
+}
+
+@media (max-width: 1920px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 7vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 0vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 1220px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 9vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+    top: 2vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 2vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 900px){
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 12vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 6.5vw;
+    top: 5vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 5vh;
+    left: 17vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 13vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 6.5vw;
+    top: 7vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(0.5rem, 2vw, 2.3rem);
+    top: 7vh;
+    left: 17vw;
+  }
 }
 
 .About_Content {
@@ -540,23 +647,21 @@ figure.snip0016:hover figcaption::before {
 }
 
 .card {
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  top: 120px;
-  left: 450px;
+  position: relative;
+  width: 13vw;
+  height: 40vh;
+  top: 12vh;
+  left: 23.5vw;
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
 }
 
-.container {
+ .container {
   position: relative;
-  top: 100px;
-  left: 50px;
+  top: -30vh;
+  left: -29vw;
   width: 100%;
-  max-width: 600px;
-  max-height: 400px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
@@ -565,10 +670,23 @@ figure.snip0016:hover figcaption::before {
   align-items: center;
 }
 
+label{
+  position: relative;
+  top: -35vh;
+  left: 30vw;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  transition: transform .4s ease;
+}
+
 .cards {
   position: relative;
-  width: 90%;
-  height: 100%;
+  width: 30vw;
+  height: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -576,8 +694,8 @@ figure.snip0016:hover figcaption::before {
 }
 
 img {
-  width: 60%;
-  height: 300%;
+  width: 20vw;
+  height: 30vh;
   border-radius: 10px;
   object-fit: cover;
   transition: transform .4s ease, opacity .4s ease;
@@ -601,7 +719,7 @@ img {
   z-index: 1;
   
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-}
+} 
 
 .player {
   position: relative;
@@ -649,9 +767,7 @@ img {
 
 #item-3:checked ~ .player #test  {
   transform: translateY(-51px);
-} */
-
-
+}  */
 
 .TSMainBackground {
   min-height: 100vh;

@@ -93,7 +93,7 @@ const Header = () => {
             </div>
         </section>
 
-        <section className="content2-section">
+        {/* <section className="content2-section">
         <div className="container">
                     <input type="radio" name="slider" id="item-1" defaultChecked></input>
                     <input type="radio" name="slider" id="item-2"></input>
@@ -129,30 +129,30 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <div className='TSMainBackground'>
     <section className="TSMaincontainer">
   <div>
-    <div class="TSMaincontent">
+    <div className="TSMaincontent">
       <h2>Shopping Mall</h2>
       <span>I like shopping !</span>
     </div>
   </div>
   <div>
-    <div class="TSMaincontent">
+    <div className="TSMaincontent">
       <h2>Histotical Place</h2>
       <span>I super duper like Playing !</span>
     </div>
   </div>
   <div>
-    <div class="TSMaincontent">
+    <div className="TSMaincontent">
       <h2>Top 3 recommend</h2>
       <span>Oops ! Where is it !</span>
     </div>
   </div>
   <div>
-    <div class="TSMaincontent">
+    <div className="TSMaincontent">
       <h2>Night Market</h2>
       <span>12 AM already? Night Time !</span>
     </div>
