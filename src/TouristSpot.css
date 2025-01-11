@@ -276,6 +276,7 @@ section {
 
 
 .box-name {
+    font-family: "Merriweather", serif;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 5px;
@@ -291,6 +292,7 @@ section {
 .box-hours {
     text-align: left; /* Ensure individual text elements are aligned left */
     margin-bottom: 10px; /* Add spacing between elements */
+    font-family: "Merriweather", serif;
 }
 
 .box-image {
