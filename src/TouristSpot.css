@@ -30,12 +30,10 @@
     left: 0%;
     display: flex;
 }
-
 .TSlogo img{
     height: 8.75rem;
     width: auto;
 }
-
 .TSlogo span{
     font-size: 0.8rem;
     font-weight: lighter;

@@ -7,6 +7,7 @@
     background: url('./assets/AboutBackground1.jpg') center center/cover no-repeat;
     height: 115vh;
     width: 100%;
+    padding-top: 5.4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,17 +44,14 @@
   }
 }
 
-.logo_a{
+.Alogo{
   display: flex;
-  align-items: center;
-  margin-right: 20px;
   position: absolute;
   top: -3.2%;
-  left: 0%;
-  display: flex;
+  left: 0;
 }
 
-.Alogo img{
+.Alogo{
   height: 8.75rem;
   width: auto;
 }
@@ -63,7 +61,6 @@
   font-weight: lighter;
   left: 10px;
 }
-
 /* Hamburger icon (for mobile view) */
 .Ahamburger {
   position: absolute;
@@ -76,14 +73,12 @@
   border: none;
   cursor: pointer;
 }
-
 .Ahamburger .bar {
   width: 33px; /* Width of hamburger bars */
   height: 5.6px;
   background-color: white; /* Bar color */
   border-radius: 2px; /* Rounded bars */
 } 
-
 @media (max-width: 840px) {
   .Ahamburger {
       display: flex; /* Show hamburger on smaller screens */

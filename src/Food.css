@@ -18,7 +18,7 @@ body {
   object-fit: contain;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 3.975vh;
+  padding-top: 4.9vh;
   position: relative; /* Ensure absolute positioning for the title */
 }
 
@@ -28,12 +28,10 @@ body {
   left: 0%;
   display: flex;
 }
-
 .Flogo img{
   height: 8.75rem;
   width: auto;
 }
-
 .Flogo span{
   font-size: 0.8rem;
   font-weight: lighter;
