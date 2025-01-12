@@ -107,45 +107,6 @@ const Header = () => {
             </div>
         </section>
 
-        {/* <section className="content2-section">
-        <div className="container">
-                    <input type="radio" name="slider" id="item-1" defaultChecked></input>
-                    <input type="radio" name="slider" id="item-2"></input>
-                    <input type="radio" name="slider" id="item-3"></input>
-                <div className="cards">
-                    <label className="card" htmlFor="item-1" id="image-1">
-                        <img src={food1} alt="Penang" />
-                    </label>
-                    <label className="card" htmlFor="item-2" id="image-2">
-                        <img src={food2} alt="Penang" />
-                    </label>
-                    <label className="card" htmlFor="item-3" id="image-3">
-                        <img src={food3} alt="Penang" />
-                    </label>
-                </div>
-                <div className="player">
-                    <div className="upper-part">
-                        <div className="play-icon">
-                                <defs/>
-                                <path d="M5 3l14 9-14 9V3z"/>
-                        </div>
-                        <div className="info-area" id="test">
-                            <label className="image-info" id="image-info-1">
-                                <div className="title">Image 1</div>
-                            </label>
-                            <label className="image-info" id="image-info-2">
-                                <div className="title">Image 2</div>
-                            </label>
-                            <label className="image-info" id="image-info-3">
-                                <div className="title">Image 3</div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
-
 <div className="FoodMainBackground">
   <section className="FoodMainContainer">
     <div className="FoodMainContent">
@@ -205,7 +166,7 @@ const Header = () => {
                     Penang, the Pearl of the Orient, combines culture, history, and beauty. Our selected hotels, from beachfront resorts to heritage stays, offer comfort and charm for a memorable stay while you explore the island's attractions.
                     </p>
                     </div>
-                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>>>Scout Out Hotels Now!</button>
+                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>Scout Out Hotels Now!</button>
                 </section>
             </div>
         </>
