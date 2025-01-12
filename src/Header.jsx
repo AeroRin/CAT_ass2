@@ -205,7 +205,7 @@ const Header = () => {
                     Penang, the Pearl of the Orient, combines culture, history, and beauty. Our selected hotels, from beachfront resorts to heritage stays, offer comfort and charm for a memorable stay while you explore the island's attractions.
                     </p>
                     </div>
-                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>>>Scout Out Hotels Now!</button>
+                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>Scout Out Hotels Now!</button>
                 </section>
             </div>
         </>

@@ -3,7 +3,7 @@ import logo from "./assets/logo.png";
 import GurneyPlaza from "./assets/Gurney_Plaza_at_night.jpg";
 import GurneyParagon from "./assets/gurney-paragon-shopping.jpg";
 import QBM from "./assets/QBM-banner.jpg";
-import Komtar from "./assets/Komtar2.jpg";
+import Komtar from "./assets/komtar2.jpg";
 import FAM from "./assets/1stAvenue.png";
 import PranginMall from "./assets/cropped-Prangin-Mall-Photo.jpg";
 import Escape from "./assets/escape.jpg";
