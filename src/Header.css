@@ -19,15 +19,13 @@
 
 .logo{
     position: absolute;
-    top: -4%;
-    left: 25px;
+    top: -5.7%;
+    left: -2.2%;
     display: flex;
-    align-items: center;
-    margin-right: 20px;
 }
 
 .logo img{
-    height: 8rem;
+    height: 8.75rem;
     width: auto;
 }
 
@@ -37,7 +35,7 @@
     left: 10px;
 }
 
-@media (max-width: 1920px){
+/* @media (max-width: 1920px){
   .logo{
     position: absolute;
     top: -4%;
@@ -69,7 +67,7 @@
     position: absolute;
     top: -4%;
   }
-}
+} */
 
 .overlay-box {
     user-select: none;
@@ -91,9 +89,7 @@
     color: #555;
 }
 
-
-
-nav {
+/* nav {
   user-select: none;
   position: absolute;
   top: 23px;
@@ -107,8 +103,8 @@ nav ul {
   display: flex;
   gap: 14px;
   list-style: none;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  justify-content: space-around; /* Spread items evenly */
+  flex-wrap: wrap; 
+  justify-content: space-around;
   padding: 0px;
   margin: 0px;
 }
@@ -125,7 +121,7 @@ nav ul li a {
   text-align: center;
   font-size: 0.8rem;
   font-weight: 400;
-  display: inline-block; /* Ensure the hover effect spans the entire text */
+  display: inline-block;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -138,8 +134,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgba(94, 91, 91, 0.799); /* Color on hover */
-  box-shadow: inset 200px 0 0 0 white; /* Animation effect */
+  color: rgba(94, 91, 91, 0.799); 
+  box-shadow: inset 200px 0 0 0 white; 
   padding: 0 .25rem;
   margin: 0 -.25rem;
 }
@@ -166,13 +162,13 @@ nav ul li a:hover {
   nav{
     margin-left: -4vw;
   }
-}
+} */
 
 /* Hamburger Button Styles */
-.hamburger {
+.Mhamburger {
   display: none; /* Hidden on larger screens */
   position: absolute;
-  top: 10px; /* Align with the top of the screen or overlay box */
+  top: 4px; /* Align with the top of the screen or overlay box */
   right: 25px; /* Adjust spacing from the right edge */
   height: 9%; /* Match the height of the overlay box */
   flex-direction: column;
@@ -185,43 +181,13 @@ nav ul li a:hover {
   padding: 15px;
 }
 
-.hamburger .bar {
+.Mhamburger .bar {
   width:35px;
   height: 8px;
   background-color: rgba(255, 255, 255, 0.799);
   border-radius: 2px;
   z-index: 100;
   transition: all 0.3s ease;
-}
-
-@media (max-width: 1350px) {
-  nav {
-    left: 120px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 70px; /* Adjust margin if needed */
-  }
-
-  nav ul li {
-    margin: 0 40px; /* Reduce the spacing between list items */
-  }
-
-  nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
-  }
-}
-
-@media (max-width: 1180px) {
-  nav {
-    left: 50px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 135px; /* Adjust margin if needed */
-  }
-
-  nav ul li {
-    margin: 0 30px; /* Reduce the spacing between list items */
-  }
-
-  nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
-  }
 }
 
 /* @media (max-width: 1161px){
@@ -233,56 +199,111 @@ nav ul li a:hover {
   }
 } */
 
+.main-nav {
+  user-select: none;
+  position: absolute;
+  top: 23px;
+  left:18%;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.main-nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around; /* Spread items evenly */
+  padding: 0px;
+  margin: 0px;
+}
+.main-nav ul li {
+  margin: 0 40px;
+}
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: inline-block; /* Ensure the hover effect spans the entire text */
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.main-nav ul li a:hover {
+  color: rgba(94, 91, 91, 0.799); /* Color on hover */
+  box-shadow: inset 200px 0 0 0 white; /* Animation effect */
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+}
+@media (max-width: 1350px) {
+  .main-nav {
+    left: 180px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 35px; /* Reduce the spacing between list items */
+  }
+}
+@media (max-width: 1200px) {
+  .main-nav {
+      left: 155px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 25px; /* Reduce the spacing between list items */
+  }
+}
 @media (max-width: 1060px) {
-  nav {
-    left: 30px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 135px; /* Adjust margin if needed */
+  .main-nav {
+      left: 130px; /* Adjust 'left' to move the nav to the left */
   }
-
-  nav ul li {
-    margin: 0 25px; /* Reduce the spacing between list items */
-  }
-
-  nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  .main-nav ul li {
+      margin: 0 18px; /* Reduce the spacing between list items */
   }
 }
-
 @media (max-width: 950px) {
-  nav {
-    left: 50px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 70px; /* Adjust margin if needed */
+  .main-nav {
+      left: 95px; /* Adjust 'left' to move the nav to the left */
   }
-
-  nav ul li {
-    margin: 0 15px; /* Reduce the spacing between list items */
-  }
-
-  nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+  .main-nav ul li {
+      margin: 0 12px; /* Reduce the spacing between list items */
   }
 }
-
 @media (max-width: 840px) {
-  .nav-menu {
+  .main-nav {
       display: none; /* Hide menu by default */
-      position: absolute;
-      top: 100px;
-      right: 20px;
-      background-color: rgba(94, 91, 91, 0.925);
+      position: absolute; /* Absolute position to avoid shifting */
+      top: 12vh;
+      width: 50%;
+      background-color: #625959;
       flex-direction: column;
-      gap: 15px;
+      gap: 25px;
       padding: 20px;
       border-radius: 15px;
   }
-  
-  .nav-menu.open {
+  .main-nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px;
+      transition: color 0.3s;
+  }
+  .main-nav a:hover {
+      background-color: var(--hotels-highlight); /* Highlight background */
+      color: #49cd42; /* Maintain text color during hover */
+  }
+  .main-nav.open {
       display: flex; /* Show menu when open */
       z-index: 100; /* Ensure it appears on top of the overlay box */
   }
-
-  .hamburger {
-     display: flex; /* Show hamburger on smaller screens */
+  .Mhamburger {
+    display: flex; /* Show hamburger on smaller screens */
   }
 }
 
@@ -1108,3 +1129,120 @@ img {
   box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
 }
 
+
+/* Main background container for the section */
+.hotelMainBackground {
+  background-image: url('./assets/HotelAssets/HotelsCompilation.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main container section */
+.hotelMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
+
+/* Main content area styling */
+.hotelMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 15px;
+  margin-bottom:  10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotelMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.hotelMainContent p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.hotelMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.hotelNavigateButton {
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #5ced3f, #78d32d); /* Gradient background */
+  border: none;
+  left: 18%;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
+}
+
+.hotelNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hotelNavigateButton:hover {
+  background: linear-gradient(45deg, #0e9d49, #42b30a); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hotelNavigateButton:active {
+  transform: translateY(2px);
+}
+
+.hotelNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
+}
+
+.hotelNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}

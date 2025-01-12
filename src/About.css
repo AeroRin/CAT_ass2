@@ -7,6 +7,7 @@
     background: url('./assets/AboutBackground1.jpg') center center/cover no-repeat;
     height: 115vh;
     width: 100%;
+    padding-top: 5.4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,19 +31,47 @@
     top: 5.4vh;
 }
 
-.logo_a{
+.Alogo{
   display: flex;
-  align-items: center;
-  margin-right: 20px;
   position: absolute;
-  top: -2vh;
-  left: 2vw;
+  top: -3.2%;
+  left: 0;
 }
 
-.logo_a img{
-  height: 8rem;
+.Alogo{
+  height: 8.75rem;
   width: auto;
 }
+
+.Alogo span{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  left: 10px;
+}
+/* Hamburger icon (for mobile view) */
+.Ahamburger {
+  position: absolute;
+  top: 23px;
+  right: 31px;
+  display: none;
+  flex-direction: column;
+  gap: 7px; /* Spacing between bars */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.Ahamburger .bar {
+  width: 33px; /* Width of hamburger bars */
+  height: 5.6px;
+  background-color: white; /* Bar color */
+  border-radius: 2px; /* Rounded bars */
+} 
+@media (max-width: 840px) {
+  .Ahamburger {
+      display: flex; /* Show hamburger on smaller screens */
+  }
+}
+
 
 @media (max-width: 1920px){
   .about .overlay-boxA {

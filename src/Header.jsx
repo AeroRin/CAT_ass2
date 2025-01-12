@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Header = () => {
 
-    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleExploreClick = () => {
@@ -20,21 +19,19 @@ const Header = () => {
       };
 
     
-    
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     };
 
     const foodNavigationButton = () => {
         window.location.href = "/Food"; // Replace with the actual URL
-      };
-
-    
-    
-    const toggleFoodMenu= () => {
-    setIsMenuOpen(!isMenuOpen);
     };
-    
+
+    const hotelNavigationButton = () => {
+        window.location.href = "/hotels"; // Replace with the actual URL
+    };
+
+
     return (
         <>
         <header className="header">
@@ -43,7 +40,7 @@ const Header = () => {
             <div className="logo">
                 <img src={logo} alt="Penang Logo" />
             </div>
-            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="/header">MAIN</a></li>
                     <li><a href="/about">ABOUT</a></li>
@@ -52,7 +49,7 @@ const Header = () => {
                     <li><a href="/hotels">HOTELS</a></li>
                 </ul>
             </nav>
-            <button className="hamburger" onClick={toggleMenu}>
+            <button className="Mhamburger" onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
@@ -167,38 +164,50 @@ const Header = () => {
 
 
 
-        <div className='TSMainBackground'>
-    <section className="TSMaincontainer">
-  <div>
-    <div className="TSMaincontent">
-      <h2>Shopping Mall</h2>
-      <span>I like shopping !</span>
-    </div>
-  </div>
-  <div>
-    <div className="TSMaincontent">
-      <h2>Histotical Place</h2>
-      <span>I super duper like Playing !</span>
-    </div>
-  </div>
-  <div>
-    <div className="TSMaincontent">
-      <h2>Top 3 recommend</h2>
-      <span>Oops ! Where is it !</span>
-    </div>
-  </div>
-  <div>
-    <div className="TSMaincontent">
-      <h2>Night Market</h2>
-      <span>12 AM already? Night Time !</span>
-    </div>
-  </div>
-</section>
-<div className="TSMainInfo">
-        <h1>Explore the Penang with Us!</h1>
-        <button onClick={handleExploreClick}>Explore Now!</button>
-      </div>
-</div>
+            <div className='TSMainBackground'>
+                <section className="TSMaincontainer">
+            <div>
+                <div className="TSMaincontent">
+                <h2>Shopping Mall</h2>
+                <span>I like shopping !</span>
+                </div>
+            </div>
+            <div>
+                <div className="TSMaincontent">
+                <h2>Historical Locations</h2>
+                <span>I super duper like Playing !</span>
+                </div>
+            </div>
+            <div>
+                <div className="TSMaincontent">
+                <h2>Top 3 Attractions</h2>
+                <span>Oops ! Where is it !</span>
+                </div>
+            </div>
+            <div>
+                <div className="TSMaincontent">
+                <h2>Night Market</h2>
+                <span>12 AM already? Night Time !</span>
+                </div>
+            </div>
+            </section>
+            <div className="TSMainInfo">
+                    <h1>Explore the Penang with Us!</h1>
+                    <button onClick={handleExploreClick}>Explore Now!</button>
+                </div>
+            </div>
+
+            <div className="hotelMainBackground">
+                <section className="hotelMainContainer">
+                    <div className="hotelMainContent">
+                    <h2>Don't Wanna Leave yet? Find a Stay!</h2>
+                    <p>
+                    Penang, the Pearl of the Orient, combines culture, history, and beauty. Our selected hotels, from beachfront resorts to heritage stays, offer comfort and charm for a memorable stay while you explore the island's attractions.
+                    </p>
+                    </div>
+                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>>>Scout Out Hotels Now!</button>
+                </section>
+            </div>
         </>
     );
 }

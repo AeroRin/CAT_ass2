@@ -18,8 +18,24 @@ body {
   object-fit: contain;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 3vh;
+  padding-top: 4.9vh;
   position: relative; /* Ensure absolute positioning for the title */
+}
+
+.Flogo{
+  position: absolute;
+  top: -2.2%;
+  left: 0%;
+  display: flex;
+}
+.Flogo img{
+  height: 8.75rem;
+  width: auto;
+}
+.Flogo span{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  left: 10px;
 }
 
 /* Title centering */
@@ -70,22 +86,28 @@ body {
 /* Hamburger icon (for mobile view) */
 .Fhamburger {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
+  top: 23px;
+  right: 31px;
+  display: none;
   flex-direction: column;
-  gap: 5px; /* Spacing between bars */
+  gap: 7px; /* Spacing between bars */
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .Fhamburger .bar {
-  width: 30px; /* Width of hamburger bars */
-  height: 4px;
+  width: 33px; /* Width of hamburger bars */
+  height: 5.6px;
   background-color: white; /* Bar color */
   border-radius: 2px; /* Rounded bars */
 } 
+
+@media (max-width: 840px) {
+  .Fhamburger {
+      display: flex; /* Show hamburger on smaller screens */
+  }
+}
 
 .F_TitleName {
   position: absolute; /* Allows precise positioning */
