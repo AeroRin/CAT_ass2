@@ -23,7 +23,7 @@
 
 .Hlogo{
     position: absolute;
-    top: -3.2%;
+    top: -4%;
     left: 0%;
     display: flex;
 }
@@ -256,7 +256,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 
     .hotels-nav {
         display: none; /* Hide menu by default */

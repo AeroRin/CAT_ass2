@@ -18,13 +18,13 @@ body {
   object-fit: contain;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 3.6vh;
+  padding-top: 5.2vh;
   position: relative; /* Ensure absolute positioning for the title */
 }
 
 .Flogo{
   position: absolute;
-  top: -2.2%;
+  top: -2.8%;
   left: 0%;
   display: flex;
 }
