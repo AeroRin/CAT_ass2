@@ -85,7 +85,7 @@ section {
     position: absolute;
     top: 0; /* Align with the top of the screen or overlay box */
     right: 25px; /* Adjust spacing from the right edge */
-    height: 8.5%; /* Match the height of the overlay box */
+    height: 10%; /* Match the height of the overlay box */
     flex-direction: column;
     justify-content: center; /* Center bars vertically */
     gap: 8px;

@@ -18,7 +18,7 @@ body {
   object-fit: contain;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 4.9vh;
+  padding-top: 3.6vh;
   position: relative; /* Ensure absolute positioning for the title */
 }
 

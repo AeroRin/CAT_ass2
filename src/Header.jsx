@@ -49,7 +49,7 @@ const Header = () => {
                     <li><a href="/hotels">HOTELS</a></li>
                 </ul>
             </nav>
-            <button className="Mhamburger" onClick={toggleMenu}>
+            <button className="Fhamburger" onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>

@@ -19,7 +19,7 @@
 
 .logo{
     position: absolute;
-    top: -5.7%;
+    top: -6.5%;
     left: -2.2%;
     display: flex;
 }
@@ -378,7 +378,7 @@ nav ul li a:hover {
     margin-top: -35vh;
     width: 152%;
     height: 200vh;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
 }
 
 @media (max-width: 2560px){
@@ -386,7 +386,7 @@ nav ul li a:hover {
     margin-top: -35vh;
     width: 100vw;
     height: 200vh;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
   }
 }
 
@@ -395,7 +395,7 @@ nav ul li a:hover {
     margin-top: -35vh;
     width: 100vw;
     height: 200vh;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
   }
 }
 

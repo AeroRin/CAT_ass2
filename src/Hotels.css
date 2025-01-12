@@ -202,7 +202,7 @@
     position: absolute; /* Fix the icon to the screen */
     top: 6px; /* Align with the top of the screen */
     right: 20px; /* Fixed position on the left */
-    height: 7%; /* Match the height of the overlay box */
+    height: 7.5%; /* Match the height of the overlay box */
     flex-direction: column;
     justify-content: center; /* Center bars vertically */
     gap: 7px;
@@ -217,7 +217,7 @@
 .hotelmain-hamburger .hotelmain-bar {
     width: 35px;
     z-index: 200;
-    height: 10px;
+    height: 12px;
     background-color: rgba(255, 255, 255, 0.799);
     border-radius: 2px;
     transition: all 0.3s ease;
