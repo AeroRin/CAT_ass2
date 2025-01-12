@@ -14,12 +14,29 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     object-fit: contain;
     position: relative;
     box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.Hlogo{
+    position: absolute;
+    top: -3.2%;
+    left: 0%;
+    display: flex;
+}
+
+.Hlogo img{
+    height: 8.75rem;
+    width: auto;
+}
+
+.Hlogo span{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    left: 10px;
 }
 
 .hotel-hold-title {
@@ -34,7 +51,7 @@
 }
 
 .hotels-title{
-    font-size: 7rem;
+    font-size: 8.2rem;
     font-weight: 400;
     position: relative; /* Make sure it's positioned relative to its parent */
     text-align: center;
@@ -70,7 +87,8 @@
     display: flex;
     flex-direction: column;  /* Stack items vertically */
     justify-content: flex-start;  /* Align items at the top */
-    align-items: center; /* Vertically align items in the center */
+    text-align: center; /* Vertically align items in the center */
+    gap: 5px;
     background: #49cd42;
     padding: 5px;  /* Adjust padding for a smaller nav bar */
     border-radius: 8px;
@@ -90,17 +108,21 @@
 .hotels-nav a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-weight: bold;
+    font-family: "Ysabeau SC";
+    font-size: 25px;
     transition: color 0.3s;
     box-sizing: border-box; /* Include padding in the width calculation */
 }
   
 .hotels-nav a:hover {
     color: var(--hotels-highlight);
+    color: #000000; /* Maintain text color during hover */
 }
   
 .hotels-article {
-    padding: 20px;
+    width: 82%;
+    padding: 30px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -113,7 +135,7 @@
 
   
 .hotels-subheading {
-    color: #666;
+    color: #625959;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -137,17 +159,70 @@
   
 .hotels-section h2 {
     font-size: 24px;
-    color: var(--hotels-highlight);
-    border-left: 4px solid var(--hotels-highlight);
+    color: #71c004;
+    border-left: 4px solid #71c004;
     padding-left: 10px;
 }
   
 .hotels-image {
-    max-width: 100%;
-    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px; /* Reduced horizontal and vertical space between images */
+    justify-content: center; /* Centers the grid in its container */
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-image {
+    width: 100%; /* Ensures the grid cell takes up full width */
+    max-width: 504px; /* Maximum size of each grid cell */
+    aspect-ratio: 1; /* Ensures square cells */
+}
+
+.hotel-image img {
+    width: 100%; /* Ensures the image fills the grid cell */
+    height: 100%; /* Matches the height to the width */
+    object-fit: cover; /* Ensures the image covers the square without distortion */
+    border-radius: 8px; /* Optional: Rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hotels-image {
+        grid-template-columns: 1fr; /* Switch to a single column on small screens */
+    }
+
+    .hotel-image {
+        width: 100%; /* Ensures the grid cell takes up full width */
+        max-width: 500px; /* Maximum size of each grid cell */
+        aspect-ratio: 1; /* Ensures square cells */
+    }
+}
+
+.hotelmain-hamburger {
+    display: none; /* Hidden on larger screens */
+    position: absolute; /* Fix the icon to the screen */
+    top: 6px; /* Align with the top of the screen */
+    right: 20px; /* Fixed position on the left */
+    height: 7%; /* Match the height of the overlay box */
+    flex-direction: column;
+    justify-content: center; /* Center bars vertically */
+    gap: 7px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100; /* Ensure it appears on top of the overlay box */
+    padding: 18px;
+    border-radius: 50%;
+}
+  
+.hotelmain-hamburger .hotelmain-bar {
+    width: 35px;
+    z-index: 200;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.799);
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 .hotelshamburger {
@@ -155,7 +230,7 @@
     position: sticky; /* Fix the icon to the screen */
     top: 25px; /* Align with the top of the screen */
     left: 20px; /* Fixed position on the left */
-    height: 4%; /* Match the height of the overlay box */
+    height: 0.37%; /* Match the height of the overlay box */
     flex-direction: column;
     justify-content: center; /* Center bars vertically */
     gap: 7px;
@@ -177,6 +252,13 @@
     transition: all 0.3s ease;
 }
 
+@media (max-width: 840px) {
+    .hotelmain-hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+  }
+  
+
 @media (max-width: 768px) {
 
     .hotels-nav {
@@ -184,10 +266,10 @@
         position: fixed; /* Absolute position to avoid shifting */
         top: 25px;
         left: 28%;
-        width: 40%;
+        width: 50%;
         background-color: #49cd42;
         flex-direction: column;
-        gap: 25px;
+        gap: 30px;
         padding: 20px;
         border-radius: 15px;
     }
@@ -195,14 +277,13 @@
     .hotels-nav a {
         color: white;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 28px;
         transition: color 0.3s;
     }
 
     .hotels-nav a:hover {
-        background-color: var(--hotels-highlight); /* Highlight background */
-        color: #49cd42; /* Maintain text color during hover */
-        border-radius: 8px; /* Optional: match the nav bar's border-radius */
+        background-color: #49cd42; /* Highlight background */
+        color: #000000; /* Maintain text color during hover */
     }
   
     .hotels-nav.open {

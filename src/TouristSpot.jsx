@@ -197,10 +197,10 @@ const TS = () => {
     <section id ='main'>
       <header className="TouristSpot">
         <div className="overlay-box"></div>
-        <div className="logo_a">
+        <div className="TSlogo">
           <img src={logo} alt="Penang Logo" />
         </div>
-        <nav className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
+        <nav className={`main-nav ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li><a href="/header">MAIN</a></li>
             <li><a href="/about">ABOUT</a></li>

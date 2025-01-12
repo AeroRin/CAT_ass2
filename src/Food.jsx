@@ -30,83 +30,108 @@ const Food = () => {
 
   const foodItems = [
     {
-      name: 'Char Kuey Teow',
-      description: 'A flavorful stir-fried noodle dish with prawns, eggs, bean sprouts, and Chinese chives.',
-      famousLocations: [
-        {
-          name: 'Penang Road Char Kuey Teow',
-          address: 'Penang Road, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Penang+Road+Char+Kuey+Teow+Penang'
-        },
-        {
-          name: 'Siam Road Char Kuey Teow',
-          address: 'Siam Road, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Siam+Road+Char+Kuey+Teow+Penang'
-        }
-      ],
-      image: charKueyTeow,
+        name: 'Char Kuey Teow',
+        description: 'Char Kuey Teow is a smoky, stir-fried noodle dish beloved for its savory flavors and rich aroma. Made with flat rice noodles, prawns, cockles, Chinese sausage, and eggs, it’s a true classic of Penang street food.',
+        famousLocations: [
+            {
+                name: 'Siam Road Charcoal Char Kway Teow',
+                address: 'Siam Road, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Siam+Road+Charcoal+Char+Kway+Teow+Penang'
+            },
+            {
+                name: 'Lorong Selamat Char Kway Teow',
+                address: 'Lorong Selamat, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Lorong+Selamat+Char+Kway+Teow+Penang'
+            }
+        ],
+        image: charKueyTeow
     },
     {
-      name: 'Hokkien Mee',
-      description: 'Prawn noodle soup with a spicy and savory broth, served with prawns, pork, egg, and bean sprouts.',
-      famousLocations: [
-        {
-          name: 'Kim’s Hokkien Mee',
-          address: 'Lorong Selamat, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Kim%E2%80%99s+Hokkien+Mee+Penang'
-        }
-      ],
-      image: hokkienMee,
+        name: 'Hokkien Mee',
+        description: 'Hokkien Mee is a hearty noodle soup that combines a flavorful prawn-based broth with yellow noodles, rice vermicelli, prawns, pork slices, boiled eggs, and crispy fried shallots. It’s a breakfast favorite in Penang.',
+        famousLocations: [
+            {
+                name: 'Green House Hokkien Mee',
+                address: 'Lorong Abu Siti, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Green+House+Hokkien+Mee+Penang'
+            },
+            {
+                name: '888 Hokkien Mee',
+                address: 'Lebuh Presgrave, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=888+Hokkien+Mee+Penang'
+            }
+        ],
+        image: hokkienMee
     },
     {
-      name: 'Asam Laksa',
-      description: 'A tangy fish-based noodle soup with mackerel, tamarind, and fresh vegetables.',
-      famousLocations: [
-        {
-          name: 'Air Itam Asam Laksa',
-          address: 'Air Itam, Penang',
-          locationLink: 'https://www.google.com/maps?q=Air+Itam+Asam+Laksa+Penang'
-        }
-      ],
-      image: asamLaksa,
+        name: 'Penang Laksa',
+        description: 'Penang Laksa is a tangy, fish-based noodle soup that perfectly balances sour, spicy, and savory flavors. The dish features rice noodles, tamarind broth, shredded fish, cucumber, onions, and fresh mint leaves.',
+        famousLocations: [
+            {
+                name: 'Pasar Air Itam Laksa',
+                address: 'Air Itam, Penang',
+                locationLink: 'https://www.google.com/maps?q=Pasar+Air+Itam+Laksa+Penang'
+            },
+            {
+                name: 'Joo Hooi Cafe Laksa',
+                address: 'Jalan Penang, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Joo+Hooi+Cafe+Laksa+Penang'
+            }
+        ],
+        image: asamLaksa
     },
     {
-      name: 'Oyster Omelette',
-      description: 'A savory omelette made with oysters, starch, and eggs, fried to perfection.',
-      famousLocations: [
-        {
-          name: 'Kek Seng Restaurant',
-          address: 'Chulia Street, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Kek+Seng+Restaurant+Penang'
-        }
-      ],
-      image: oysterOmelette,
+        name: 'Oyster Omelette',
+        description: 'Oyster Omelette is a delicious mix of eggs, potato starch, and fresh oysters, pan-fried to crispy perfection. This dish is served with a tangy chili sauce for a delightful contrast in flavor.',
+        famousLocations: [
+            {
+                name: 'Kedai Kopi Seng Thor',
+                address: 'Jalan Carnarvon, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Kedai+Kopi+Seng+Thor+Penang'
+            },
+            {
+                name: 'New Lane Hawker Centre',
+                address: 'Lorong Baru, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=New+Lane+Hawker+Centre+Penang'
+            }
+        ],
+        image: oysterOmelette
     },
     {
-      name: 'Wantan Mee',
-      description: 'Noodles served with dumplings filled with seasoned pork or shrimp, in a savory broth.',
-      famousLocations: [
-        {
-          name: 'Chung Ling Wantan Mee',
-          address: 'Chung Ling Road, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Chung+Ling+Wantan+Mee+Penang'
-        }
-      ],
-      image: wanTanMee,
+        name: 'Wantan Mee',
+        description: 'Wantan Mee is a comforting noodle dish topped with succulent char siu (barbecued pork), flavorful dumplings, and leafy greens, served either dry with soy sauce or in a light broth.',
+        famousLocations: [
+            {
+                name: 'Tai Wah Wantan Mee',
+                address: 'Lebuh Campbell, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Tai+Wah+Wantan+Mee+Penang'
+            },
+            {
+                name: 'Chulia Street Wantan Mee',
+                address: 'Lebuh Chulia, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Chulia+Street+Wantan+Mee+Penang'
+            }
+        ],
+        image: wanTanMee
     },
     {
-      name: 'Cendol',
-      description: 'A sweet dessert made with shaved ice, coconut milk, palm sugar, and green rice flour jelly.',
-      famousLocations: [
-        {
-          name: 'Penang Road Cendol',
-          address: 'Penang Road, George Town, Penang',
-          locationLink: 'https://www.google.com/maps?q=Penang+Road+Cendol+Penang'
-        }
-      ],
-      image: cendol,
+        name: 'Cendol',
+        description: 'Cendol is a refreshing dessert made with shaved ice, coconut milk, green rice flour jelly, red beans, and gula Melaka (palm sugar syrup). It’s perfect for Penang’s warm weather.',
+        famousLocations: [
+            {
+                name: 'Penang Road Famous Teochew Cendol',
+                address: 'Lebuh Keng Kwee, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Penang+Road+Famous+Teochew+Cendol+Penang'
+            },
+            {
+                name: 'Kimberley Street Cendol',
+                address: 'Lebuh Kimberley, George Town, Penang',
+                locationLink: 'https://www.google.com/maps?q=Kimberley+Street+Cendol+Penang'
+            }
+        ],
+        image: cendol
     }
-  ];  
+];  
 
   const cardRefs = useRef([]);
 
@@ -134,10 +159,10 @@ const Food = () => {
     <>
       <header className="Food">
         <div className="overlay-box"></div>
-        <div className="logo">
+        <div className="Flogo">
           <img src={logo} alt="Penang Logo" />
         </div>
-        <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+        <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="/header">MAIN</a></li>
             <li><a href="/about">ABOUT</a></li>
@@ -146,7 +171,7 @@ const Food = () => {
             <li><a href="/hotels">HOTELS</a></li>
           </ul>
         </nav>
-        <button className="hamburger" onClick={toggleMenu}>
+        <button className="Fhamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -171,17 +196,28 @@ const Food = () => {
               </div>
               <div className="food-text">
                 <h2>{food.name}</h2>
-                <p>{food.description}</p>
+                <p>
+                {food.description}   You can try it at{" "}
                 {food.famousLocations.map((location, locIndex) => (
-                <div key={locIndex}>
-                <p>{location.name} {location.address}</p>
-                <a href={location.locationLink} target="_blank" rel="noopener noreferrer">Find Location</a>
+                <span key={locIndex}>
+                  <a
+                   href={location.locationLink}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   title={`Find ${food.name} at ${location.name}`}
+                   className="food-card-link"
+                  >
+                    {location.name}
+                  </a>
+                  {locIndex < food.famousLocations.length - 1 ? ", " : "."}
+                  </span> 
+                ))}
+                </p>
+                </div>
+
               </div>
             ))}
           </div>
-        </div>
-      ))}
-        </div>
       </div>
       <div className="bottom-text-container">
         <div className="text-group">

@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Bebas Neue', serif;
+  font-family: 'Bebas Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -18,13 +18,32 @@ body {
   object-fit: contain;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 3vh;
+  padding-top: 3.975vh;
   position: relative; /* Ensure absolute positioning for the title */
+}
+
+.Flogo{
+  position: absolute;
+  top: -2.2%;
+  left: 0%;
+  display: flex;
+}
+
+.Flogo img{
+  height: 8.75rem;
+  width: auto;
+}
+
+.Flogo span{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  left: 10px;
 }
 
 /* Title centering */
 .F_TitleName {
   position: absolute;
+  margin-top: -100px;
   top: 50%; /* Vertically center the title */
   left: 50%; /* Horizontally center the title */
   transform: translate(-50%, -50%); /* Adjust for exact centering */
@@ -33,11 +52,13 @@ body {
 }
 
 .F_TitleName h1 {
-  font-size: 10vw; /* Responsive font size */
+  font-size: 5rem; /* Responsive font size */
   color: white;
-  margin: 0;
+  margin: 0 ;
   font-weight: bold; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
+  font-weight: bold; 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
 }
 
 .logo img {
@@ -67,30 +88,40 @@ body {
 /* Hamburger icon (for mobile view) */
 .Fhamburger {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
+  top: 23px;
+  right: 31px;
+  display: none;
   flex-direction: column;
-  gap: 5px; /* Spacing between bars */
+  gap: 7px; /* Spacing between bars */
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .Fhamburger .bar {
-  width: 30px; /* Width of hamburger bars */
-  height: 4px;
+  width: 33px; /* Width of hamburger bars */
+  height: 5.6px;
   background-color: white; /* Bar color */
   border-radius: 2px; /* Rounded bars */
 } 
 
+@media (max-width: 840px) {
+  .Fhamburger {
+      display: flex; /* Show hamburger on smaller screens */
+  }
+}
+
 .F_TitleName {
-  position: absolute; /* Position it absolutely */
-  top: 150px; /* Increase this value to move the title lower */
-  left: 50%;
-  transform: translateX(-50%); /* Center the title horizontally */
-  text-align: center; /* Center the title text */
-  width: 100%; /* Take full width of the viewport */
+  position: absolute; /* Allows precise positioning */
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust for true centering */
+  font-size: 4rem; /* Make the text larger */
+  color: #ffffff; /* Ensure good contrast against the background */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for better visibility */
+  font-family: 'Bebas Neue', sans-serif; /* Ensure consistent font style */
+  text-align: center; /* Center align the text */
+  z-index: 10; /* Ensure it appears above the background image */
 }
 
 .F_TitleName h1 {
@@ -98,13 +129,16 @@ body {
   color: white;
   margin: 0; /* Remove any default margin */
   font-weight: bold; /* Optional: Makes title bold */
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 /* Food Cards container */
-/* Food Cards container */
-/* Food Cards container */
 .food-container {
-  background-image: url('./assets/kopitiamcrowdbg.png'); /* Replace with your image URL */
+  background-image: url('./assets/kopitiamcrowdbg.png');
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -119,7 +153,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white overlay */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
   z-index: 1; /* Position overlay above the background but behind the cards */
 }
 
@@ -148,7 +182,9 @@ body {
 }
 
 .food-card:hover {
-  transform: translateY(-20px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-15px);
+  transition: all 0.3s ease-in-out;
 }
 
 .food-card.left {
@@ -170,6 +206,18 @@ body {
   border-radius: 15px; /* Match the card's border-radius */
   background-color: #f5f5f5; /* Optional: Light background to separate the image */
   overflow: hidden; /* Ensure no overflow for large images */
+}
+
+@media (max-width: 768px) {
+  .food-card {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .food-image-container {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .food-image {
@@ -219,7 +267,7 @@ body {
   text-align: center;
   color: black;
   z-index: 10;
-  font-family: 'Arial', sans-serif; /* Modern font family */
+  font-family: 'Great Vibes', cursive, sans-serif; /* Cursive font family with fallback */
 }
 
 .text-group {

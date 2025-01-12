@@ -19,15 +19,13 @@
 
 .logo{
     position: absolute;
-    top: -4%;
-    left: 25px;
+    top: -5.7%;
+    left: -2.2%;
     display: flex;
-    align-items: center;
-    margin-right: 20px;
 }
 
 .logo img{
-    height: 8rem;
+    height: 8.75rem;
     width: auto;
 }
 
@@ -37,6 +35,7 @@
     left: 10px;
 }
 
+/* 
 @media (max-width: 1920px){
   .logo{
     position: absolute;
@@ -63,13 +62,12 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .logo{
     position: absolute;
     top: -4%;
   }
-}
+} */
 
 .overlay-box {
     user-select: none;
@@ -91,13 +89,12 @@
     color: #555;
 }
 
-
-
+/*
 nav {
   user-select: none;
   position: absolute;
   top: 23px;
-  left: 270px;
+  left:18%;
   display: flex;
   align-items: center;
   margin-left: 70px;
@@ -107,8 +104,8 @@ nav ul {
   display: flex;
   gap: 14px;
   list-style: none;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  justify-content: space-around; /* Spread items evenly */
+  flex-wrap: wrap; 
+  justify-content: space-around; 
   padding: 0px;
   margin: 0px;
 }
@@ -125,9 +122,9 @@ nav ul li a {
   text-align: center;
   font-size: 0.8rem;
   font-weight: 400;
-  display: inline-block; /* Ensure the hover effect spans the entire text */
+  display: inline-block; 
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
+} 
 
 nav ul li a {
   font-family: 'Ysabeau SC';
@@ -138,11 +135,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgba(94, 91, 91, 0.799); /* Color on hover */
-  box-shadow: inset 200px 0 0 0 white; /* Animation effect */
+  color: rgba(94, 91, 91, 0.799); 
+  box-shadow: inset 200px 0 0 0 white; 
   padding: 0 .25rem;
   margin: 0 -.25rem;
-}
+} */
+
 
 @media (max-width: 1920px){
   nav{
@@ -169,12 +167,12 @@ nav ul li a:hover {
 }
 
 /* Hamburger Button Styles */
-.hamburger {
+.Mhamburger {
   display: none; /* Hidden on larger screens */
   position: absolute;
-  top: 10px; /* Align with the top of the screen or overlay box */
+  top: 4px; /* Align with the top of the screen or overlay box */
   right: 25px; /* Adjust spacing from the right edge */
-  height: 7%; /* Match the height of the overlay box */
+  height: 9%; /* Match the height of the overlay box */
   flex-direction: column;
   justify-content: center; /* Center bars vertically */
   gap: 7px;
@@ -185,43 +183,45 @@ nav ul li a:hover {
   padding: 15px;
 }
 
-.hamburger .bar {
+.Mhamburger .bar {
   width:35px;
-  height: 6px;
+  height: 7px;
   background-color: rgba(255, 255, 255, 0.799);
   border-radius: 2px;
+  z-index: 100;
   transition: all 0.3s ease;
 }
 
+/*
 @media (max-width: 1350px) {
   nav {
-    left: 120px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 70px; /* Adjust margin if needed */
+    left: 120px; 
+    margin-left: 70px; 
   }
 
   nav ul li {
-    margin: 0 40px; /* Reduce the spacing between list items */
+    margin: 0 40px; 
   }
 
   nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+    font-size: 1.2rem; 
   }
 }
 
 @media (max-width: 1180px) {
   nav {
-    left: 50px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 135px; /* Adjust margin if needed */
+    left: 50px; 
+    margin-left: 135px; 
   }
 
   nav ul li {
-    margin: 0 30px; /* Reduce the spacing between list items */
+    margin: 0 30px; 
   }
 
   nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+    font-size: 1.2rem; 
   }
-}
+} */
 
 /* @media (max-width: 1161px){
   .hamburger{
@@ -232,33 +232,34 @@ nav ul li a:hover {
   }
 } */
 
+/*
 @media (max-width: 1060px) {
   nav {
-    left: 30px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 135px; /* Adjust margin if needed */
+    left: 30px; 
+    margin-left: 135px; 
   }
 
   nav ul li {
-    margin: 0 25px; /* Reduce the spacing between list items */
+    margin: 0 25px; 
   }
 
   nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+    font-size: 1.2rem; 
   }
 }
 
 @media (max-width: 950px) {
   nav {
-    left: 50px; /* Adjust 'left' to move the nav to the left */
-    margin-left: 70px; /* Adjust margin if needed */
+    left: 50px; 
+    margin-left: 70px; 
   }
 
   nav ul li {
-    margin: 0 15px; /* Reduce the spacing between list items */
+    margin: 0 15px;
   }
 
   nav ul li a {
-    font-size: 1.2rem; /* Optionally adjust font size for smaller screens */
+    font-size: 1.2rem; 
   }
 }
 
@@ -267,25 +268,147 @@ nav ul li a:hover {
   nav{display:none;}
   
   .nav-menu {
-      display: none; /* Hide menu by default */
+      display: none; 
       position: absolute;
       top: 100px;
       right: 20px;
       background-color: rgba(94, 91, 91, 0.925);
-      flex-direction: column;
       gap: 15px;
       padding: 20px;
       border-radius: 15px;
   }
   
   .nav-menu.open {
+      display: flex; 
+      z-index: 100; 
+  }
+
+  .hamburger {
+     display: flex; 
+  }
+}*/
+
+.main-nav {
+  user-select: none;
+  position: absolute;
+  top: 23px;
+  left:18%;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around; /* Spread items evenly */
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-nav ul li {
+  margin: 0 40px;
+}
+
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: inline-block; /* Ensure the hover effect spans the entire text */
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.main-nav ul li a:hover {
+  color: rgba(94, 91, 91, 0.799); /* Color on hover */
+  box-shadow: inset 200px 0 0 0 white; /* Animation effect */
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+}
+
+@media (max-width: 1350px) {
+  .main-nav {
+    left: 180px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 35px; /* Reduce the spacing between list items */
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+      left: 155px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 25px; /* Reduce the spacing between list items */
+  }
+}
+
+@media (max-width: 1060px) {
+  .main-nav {
+      left: 130px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 18px; /* Reduce the spacing between list items */
+  }
+}
+
+@media (max-width: 950px) {
+  .main-nav {
+      left: 95px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 12px; /* Reduce the spacing between list items */
+  }
+}
+
+@media (max-width: 840px) {
+
+  .main-nav {
+      display: none; /* Hide menu by default */
+      position: absolute; /* Absolute position to avoid shifting */
+      top: 12vh;
+      width: 50%;
+      background-color: #625959;
+      flex-direction: column;
+      gap: 25px;
+      padding: 20px;
+      border-radius: 15px;
+  }
+
+  .main-nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px;
+      transition: color 0.3s;
+  }
+
+  .main-nav a:hover {
+      background-color: var(--hotels-highlight); /* Highlight background */
+      color: #49cd42; /* Maintain text color during hover */
+  }
+
+  .main-nav.open {
       display: flex; /* Show menu when open */
       z-index: 100; /* Ensure it appears on top of the overlay box */
   }
 
-  .hamburger {
-     display: flex; /* Show hamburger on smaller screens */
-  }
+  .Mhamburger {
+    display: flex; /* Show hamburger on smaller screens */
+}
 }
 
  .H_TitleName h1{
@@ -362,6 +485,15 @@ nav ul li a:hover {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
 }
 
+@media (max-width: 2560px){
+  .box-section{
+    margin-top: -35vh;
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0) 26%, rgba(0, 0, 0) 34%, rgba(0, 0, 0) 89%,rgba(0, 0, 0, 0.2) 100%);
+  }
+}
+
 @media (max-width: 1920px){
   .box-section{
     margin-top: -35vh;
@@ -404,7 +536,7 @@ nav ul li a:hover {
 
 .C_TitleContent p{
     user-select: none;
-    font-size: clamp(1rem, 1.2rem, 1.8rem);
+    font-size: clamp(1rem, 2vw, 4rem);
     color: white;
     position: relative;
     top: 0vh;
@@ -978,7 +1110,264 @@ img {
   }
 
 
+  
 
+/* Main background container for the section */
+.FoodMainBackground {
+  background-image: url('./assets/tablefood.png'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Main container section */
+.FoodMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
 
+/* Main content area styling */
+.FoodMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 15px;
+  margin-bottom:  10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.FoodMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.FoodMainContent p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.FoodMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Explore button container */
+.FoodMainInfo {
+  margin-top: 20px;
+}
+
+.FoodMainInfo h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.foodNavigateButton {
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff7f50, #ff4500); /* Gradient background */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
+}
+
+.foodNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foodNavigateButton:hover {
+  background: linear-gradient(45deg, #ff4500, #ff7f50); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.foodNavigateButton:active {
+  transform: translateY(2px);
+}
+
+.foodNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
+}
+
+.foodNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}
+
+/* Main background container for the section */
+.HotelMainBackground {
+  background-image: url('./assets/HotelAssets/HotelsCompilation.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main container section */
+.HotelMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
+
+/* Main content area styling */
+.HotelMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 15px;
+  margin-bottom:  10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.HotelMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.HoteldMainContent p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.HotelMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Explore button container */
+.HotelMainInfo {
+  margin-top: 20px;
+}
+
+.HotelMainInfo h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #eaf8a3;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.HotelNavigateButton {
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff7f50, #ff4500); /* Gradient background */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
+}
+
+.HotelNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.HotelNavigateButton:hover {
+  background: linear-gradient(45deg, #ff4500, #ff7f50); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.HotelNavigateButton:active {
+  transform: translateY(2px);
+}
+
+.HotelNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
+}
+
+.HotelNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}

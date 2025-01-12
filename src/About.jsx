@@ -20,10 +20,10 @@ const About = () => {
         <>
             <header className="about">
                 <div className="overlay-box"></div>
-                <div className="logo_a">
+                <div className="Alogo">
                     <img src={logo} alt="Penang Logo" />
                 </div>
-                <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+                <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li><a href="/header">MAIN</a></li>
                         <li><a href="/about">ABOUT</a></li>
@@ -32,7 +32,7 @@ const About = () => {
                         <li><a href="/hotels">HOTELS</a></li>
                     </ul>
                 </nav>
-                <button className="hamburger" onClick={toggleMenu}>
+                <button className="Ahamburger" onClick={toggleMenu}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
