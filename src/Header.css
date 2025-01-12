@@ -263,6 +263,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 840px) {
+
+  nav{display:none;}
+  
   .nav-menu {
       display: none; /* Hide menu by default */
       position: absolute;

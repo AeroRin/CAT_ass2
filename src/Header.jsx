@@ -13,13 +13,15 @@ const Header = () => {
     
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+        };
+    
+
     const handleExploreClick = () => {
         window.location.href = "/TouristSpot"; // Replace with the actual URL
       };
     
-    const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    };
     return (
         <>
         <header className="header">
@@ -28,7 +30,7 @@ const Header = () => {
             <div className="logo">
                 <img src={logo} alt="Penang Logo" />
             </div>
-            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+            <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="/header">MAIN</a></li>
                     <li><a href="/about">ABOUT</a></li>
